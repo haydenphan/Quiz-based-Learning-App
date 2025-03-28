@@ -9,11 +9,8 @@ using System.Threading.Tasks;
 
 namespace DataAccess.Models
 {
-    public class Quiz
+    public class Quiz : BaseDomain
     {
-        [Key]
-        public int QuizID { get; set; }
-
         [Required]
         public string UserID { get; set; }
 
