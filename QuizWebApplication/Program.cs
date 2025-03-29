@@ -4,6 +4,7 @@ using Microsoft.EntityFrameworkCore;
 using Microsoft.AspNetCore.Authentication.Google;
 using Services.Contracts;
 using Services.Implementations;
+using Microsoft.AspNetCore.Mvc.Infrastructure;
 
 var builder = WebApplication.CreateBuilder(args);
 
@@ -21,12 +22,12 @@ builder.Services.AddIdentity<IdentityUser, IdentityRole>(options =>
     .AddEntityFrameworkStores<QuizDbContext>()
     .AddDefaultTokenProviders();
 
-builder.Services.AddAuthentication()
+/*builder.Services.AddAuthentication()
     .AddGoogle(googleOptions =>
     {
         googleOptions.ClientId = builder.Configuration["Authentication:Google:ClientId"];
         googleOptions.ClientSecret = builder.Configuration["Authentication:Google:ClientSecret"];
-    });
+    });*/
 
 builder.Services.ConfigureApplicationCookie(options =>
 {
@@ -35,7 +36,13 @@ builder.Services.ConfigureApplicationCookie(options =>
 });
 
 builder.Services.AddScoped<IAccountService, AccountService>();
-builder.Services.AddHttpContextAccessor();
+builder.Services.AddScoped<IQuizService, QuizService>();
+builder.Services.AddScoped<IQuestionService, QuestionService>();
+builder.Services.AddScoped<IOptionService, OptionService>();
+builder.Services.AddScoped<ITimeLimitService, TimeLimitService>();
+builder.Services.AddSingleton<IActionContextAccessor, ActionContextAccessor>();
+
+builder.Services.AddSession();
 
 // Add services to the container.
 builder.Services.AddControllersWithViews();
@@ -57,6 +64,7 @@ app.UseRouting();
 
 app.UseAuthentication();
 app.UseAuthorization();
+app.UseSession();
 
 app.MapControllerRoute(
     name: "default",

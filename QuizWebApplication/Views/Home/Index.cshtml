@@ -2,7 +2,28 @@
     ViewData["Title"] = "Home Page";
 }
 
-<div class="text-center">
-    <h1 class="display-4">Welcome</h1>
-    <p>Learn about <a href="https://learn.microsoft.com/aspnet/core">building Web apps with ASP.NET Core</a>.</p>
+<link rel="stylesheet" href="~/css/quiz-join.css" asp-append-version="true" />
+
+<div class="quiz-join-container">
+    <div class="quiz-join-box text-center">
+        <h1 class="quiz-title mb-4">QuizWebApplication!</h1>
+        @if (TempData["Error"] != null)
+        {
+            <div class="alert alert-danger mb-3" role="alert">
+                @TempData["Error"]
+            </div>
+        }
+        <form asp-controller="Quiz" asp-action="Join" method="post">
+            <div class="form-group mb-3">
+                <input type="text" name="gamePin" class="form-control game-pin-input" placeholder="Game PIN" required />
+            </div>
+            <button type="submit" class="btn btn-enter">Enter</button>
+        </form>
+        @if (!User.Identity.IsAuthenticated)
+        {
+            <p class="mt-3 create-quiz-message">
+                Want to create your own quiz? <a href="@Url.Action("Login", "Account")" class="text-primary">Login</a>
+            </p>
+        }
+    </div>
 </div>

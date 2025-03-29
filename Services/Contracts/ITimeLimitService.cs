@@ -1,12 +1,10 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+﻿using DataAccess.Models;
 
 namespace Services.Contracts
 {
     public interface ITimeLimitService
     {
+        Task<List<TimeLimit>> GetAllTimeLimitsAsync();
+        Task<TimeLimit> GetTimeLimitByIdAsync(int timeLimitId);
     }
 }

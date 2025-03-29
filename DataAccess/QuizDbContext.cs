@@ -60,7 +60,18 @@ namespace DataAccess
         public Repository<Option> OptionRepository => new Repository<Option>(this);
         public Repository<Question> QuestionRepository => new Repository<Question>(this);
         public Repository<Quiz> QuizRepository => new Repository<Quiz>(this);
-        public Repository<TimeLimit> TimeLimitRepository => new Repository<TimeLimit>(this);
+        private Repository<TimeLimit> _timeLimitRepository;
+        public Repository<TimeLimit> TimeLimitRepository
+        {
+            get
+            {
+                if (_timeLimitRepository == null)
+                {
+                    _timeLimitRepository = new Repository<TimeLimit>(this);
+                }
+                return _timeLimitRepository;
+            }
+        }
 
         #endregion
     }
