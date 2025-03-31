@@ -1,0 +1,80 @@
+﻿@model List<DataAccess.Models.Quiz>
+@{
+    ViewData["Title"] = "Your Quiz List";
+}
+
+<h2>Your Quiz List</h2>
+@{
+    var model = Model;
+}
+@if (Model.Count() == 0)
+{
+    <p>You have not created any quiz yet.</p>
+}
+
+else
+{
+    <table class="table">
+        <thead>
+            <tr>
+                <th>STT</th>
+                <th>Title</th>
+                <th>Description</th>
+                <th>Number question</th>
+                <th>Actions</th>
+
+            </tr>
+        </thead>
+        <tbody>
+            @{
+                int index = 1;
+            }
+            @foreach (var quiz in Model)
+            {
+                <tr>
+                    <td>@index</td>
+                    <td>@quiz.QuizTitle</td>
+                    <td>@quiz.QuizDescription</td>
+                    <td>@quiz.Questions?.Count()</td>
+                    <td>
+                        <button class="btn btn-primary host-live-btn" data-quiz-id="@quiz.Id">Host Live</button>
+                        <a href="@Url.Action("Delete", "Quiz", new { id = quiz.Id })" class="btn btn-danger">Delete</a>
+                    </td>
+                </tr>
+                { index++; }
+            }
+        </tbody>
+    </table>
+}
+@section Scripts {
+    <script src="~/lib/signalr/dist/browser/signalr.js"></script>
+    <script src="~/lib/signalr/dist/browser/signalr.min.js"></script>
+    <script src="~/js/signalr-client.js"></script>
+    <script>
+        connection.start()
+            .then(() => {
+                console.log("SignalR Connected");
+                //connection.invoke("NotifyConnected"); // Gửi tín hiệu khi kết nối
+            })
+            .catch(err => console.error("SignalR Connection Error: ", err));
+        const hostId = "@User.FindFirst(System.Security.Claims.ClaimTypes.NameIdentifier)?.Value";
+        
+        document.querySelectorAll(".host-live-btn").forEach(btn => {
+            btn.addEventListener("click", () => {
+                const quizId = btn.getAttribute("data-quiz-id");
+                if (connection.state === signalR.HubConnectionState.Connected) {
+                    createGame(quizId, hostId);
+                } else {
+                    console.error("SignalR not connected yet. Retrying...");
+                    startConnection(); // Thử kết nối lại nếu chưa sẵn sàng
+                }
+            });
+        });
+        //lắng nghe create game thành công
+        connection.on("GameCreated", (gamePin, quizId) => {
+            console.log(`Game created with PIN: ${gamePin}, Quiz ID: ${quizId}`);
+            window.location.assign(`/Game/Lobby?quizId=${quizId}&gamePin=${gamePin}`);
+        });
+
+    </script>
+}

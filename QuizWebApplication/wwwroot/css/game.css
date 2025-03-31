@@ -1,0 +1,219 @@
+﻿body {
+    font-family: 'Montserrat', sans-serif;
+    margin: 0;
+    padding: 0;
+    background: linear-gradient(135deg, #8e2de2, #4a00e0);
+    color: #fff;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.game-container {
+    text-align: center;
+    width: 90%;
+    max-width: 900px;
+    padding: 20px;
+}
+
+    .game-container h1 {
+        font-size: 2.5em;
+        margin-bottom: 20px;
+        text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+    }
+
+#questionContainer {
+    background: rgba(255, 255, 255, 0.1);
+    padding: 30px;
+    border-radius: 15px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+    backdrop-filter: blur(5px);
+}
+
+#questionText {
+    font-size: 2em;
+    margin-bottom: 20px;
+    line-height: 1.2;
+}
+
+#countdown {
+    font-size: 1.8em;
+    font-weight: bold;
+    color: #ffeb3b;
+    margin-bottom: 20px;
+    text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.5);
+}
+
+#answers {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 15px;
+    margin-top: 20px;
+}
+
+.answer-btn {
+    padding: 20px;
+    font-size: 1.3em;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    color: #fff;
+    transition: transform 0.2s ease, opacity 0.2s ease;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    position: relative;
+    overflow: hidden;
+}
+
+    .answer-btn:hover {
+        transform: scale(1.05);
+    }
+
+    .answer-btn:disabled {
+        opacity: 0.6;
+        cursor: not-allowed;
+    }
+
+    /* Màu sắc Kahoot */
+    .answer-btn:nth-child(1) {
+        background: #f44336;
+    }
+    /* Đỏ */
+    .answer-btn:nth-child(2) {
+        background: #2196f3;
+    }
+    /* Xanh dương */
+    .answer-btn:nth-child(3) {
+        background: #ffeb3b;
+        color: #000;
+    }
+    /* Vàng */
+    .answer-btn:nth-child(4) {
+        background: #4caf50;
+    }
+/* Xanh lá */
+
+#resultContainer {
+    margin-top: 20px;
+    background: rgba(255, 255, 255, 0.15);
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+    #resultContainer h3 {
+        font-size: 1.6em;
+        margin-bottom: 10px;
+    }
+
+    #resultContainer ul {
+        list-style: none;
+        padding: 0;
+    }
+
+        #resultContainer ul li {
+            border-radius: 5px;
+            display: flex;
+            justify-content: space-between;
+            padding-left: 150px;
+            padding-right: 150px;
+            font-size: 1.3em;
+            margin: 8px 0;
+        }
+
+    #resultContainer p {
+        font-size: 1.3em;
+        margin: 8px 0;
+    }
+
+#endQuestionButton, #nextQuestionButton {
+    padding: 15px 40px;
+    font-size: 1.2em;
+    margin: 10px;
+    border: none;
+    border-radius: 25px;
+    background: #ff9800;
+    color: #fff;
+    cursor: pointer;
+    transition: background 0.2s ease;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+}
+
+    #endQuestionButton:hover, #nextQuestionButton:hover {
+        background: #fb8c00;
+    }
+
+/* Responsive design */
+@media (max-width: 600px) {
+    .game-container h1 {
+        font-size: 2em;
+    }
+
+    #questionText {
+        font-size: 1.5em;
+    }
+
+    #answers {
+        grid-template-columns: 1fr;
+    }
+
+    .answer-btn {
+        font-size: 1.1em;
+        padding: 15px;
+    }
+
+    #countdown {
+        font-size: 1.5em;
+    }
+}
+.answer-btn.active {
+    border: 3px solid #00ff00; /* Viền xanh lá */
+    background: rgba(255, 255, 255, 0.3); /* Nền sáng hơn */
+    animation: pulse 0.5s infinite;
+}
+.correct {
+    color: #34d058;
+}
+.incorrect {
+    color: #dc3545;
+}
+.rankActive {
+    background-color: #FF0000;
+}
+
+#backHome {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+    font-size: 18px;
+    color: white;
+    background: #007bff;
+    border-radius: 8px;
+    padding: 10px 15px;
+    transition: 0.3s;
+}
+
+    #backHome i {
+        margin-right: 8px;
+        font-size: 20px;
+    }
+
+    #backHome:hover {
+        background: #0056b3;
+    }
+
+
+@keyframes pulse {
+    0% {
+        transform: scale(1);
+    }
+
+    50% {
+        transform: scale(1.05);
+    }
+
+    100% {
+        transform: scale(1);
+    }
+}

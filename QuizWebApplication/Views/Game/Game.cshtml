@@ -1,0 +1,219 @@
+﻿@model DataAccess.Models.Quiz
+@{
+    ViewData["Title"] = "Game";
+    var quizId = Model?.Id ?? (int)ViewBag.QuizId;
+    var gamePin = ViewBag.GamePin;
+    var isHost = ViewBag.IsHost;
+    var connectionId = ViewBag.ConnectionId;
+    Layout = null;
+}
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Game - QuizPulse</title>
+    <link rel="stylesheet" href="~/css/game.css">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" />
+</head>
+<body>
+    <div class="game-container">
+        <h1>Game PIN: @gamePin</h1>
+        <div id="questionContainer">
+            <h2 id="questionText">Loading question...</h2>
+            <div id="countdown"></div>
+            <div id="answers"></div>
+        </div>
+        <div id="resultContainer" style="display: none;"></div>
+        @if (isHost)
+        {
+            <button id="nextQuestionButton" style="display: none;">Next</button>
+        }
+        
+    </div>
+    <script src="~/lib/signalr/dist/browser/signalr.js"></script>
+    <script src="~/lib/signalr/dist/browser/signalr.min.js"></script>
+    <script src="~/js/signalr-client.js"></script>
+    <script>
+        const userId = "@User.FindFirst(System.Security.Claims.ClaimTypes.NameIdentifier)?.Value";
+        const quizId = @quizId;
+        const gamePin = "@gamePin";
+        const isHost = @isHost.ToString().ToLower();
+        const connectionId = "@connectionId";
+        let countdownTimer;
+        let timeLeft = 0;
+        const questionContainer = document.getElementById("questionContainer");
+        const questionText = document.getElementById("questionText");
+        const answersContainer = document.getElementById("answers");
+        const resultContainer = document.getElementById("resultContainer");
+        const countdownElement = document.getElementById("countdown");
+        connection.start()
+            .then(() => {
+                connection.invoke("UpdateConnection", gamePin, userId, connectionId)
+                    .then(() => { connection.invoke("GetCurrentQuestion", gamePin); })
+                    .catch(err => console.error("UpdateConnection Error:", err));
+            })
+            .catch(err => console.error("SignalR Connection Error: ", err));
+
+        connection.on("DisplayQuestion", (question) => {
+            console.error('Question: ', question)
+            questionContainer.style.display = "block";
+            resultContainer.style.display = "none";
+            questionText.innerHTML = question.questionContent;
+
+            if (isHost) {
+                answersContainer.innerHTML = question.options.map(op => `
+                                <button class="answer-btn" disabled>${op.optionContent}</button>
+                        `).join("");
+                document.getElementById("nextQuestionButton").style.display = "none";
+            } else {
+                answersContainer.innerHTML = question.options.map((op, index) => `
+                                       <button class="answer-btn" onclick="selectAnswer(${op.optionId}, ${index})">${op.optionContent}</button>
+                        `).join("");
+            }
+
+            startCountdown(question.duration);
+        });
+
+        connection.on("HostResult", (results) => {
+            console.log('Host Result: ', results);
+            clearCountdown();
+            
+            resultContainer.style.display = "block";
+            if (isHost) {
+                
+                questionContainer.style.display = "none";
+                const correctOption = results.correctOption;
+                const list = results.result;
+                resultContainer.innerHTML = `
+                            <h3>Correct Answer: ${correctOption}</h3>
+                            <ul>${list.map((p, index) => `<li><p>${index + 1}</p> <p>${p.playerName}</p> <p>${p.score}</p></li>`).join("")}</ul>
+                        `;
+
+                document.getElementById("nextQuestionButton").style.display = "block";
+            }
+        });
+        
+        connection.on("PlayerResult", (result) => {
+            console.log(result)
+            if (result) { 
+                resultContainer.style.display = "block";
+                questionContainer.style.display = "none";
+                // Sử dụng ternary để tạo chuỗi HTML hợp lệ cho biểu tượng
+                const iconHtml = result.score <= 0
+                    ? '<i class="fa-solid fa-circle-xmark incorrect"></i>'
+                    : '<i class="fa-solid fa-circle-check correct"></i>';
+                resultContainer.innerHTML = `
+                    <p>Correct Answer: ${result.correctOption}</p>
+                    <p>${iconHtml}</p>
+                    <p>+ ${result.score}</p>
+                    <p>Score: ${result.totalScore}</p>
+                    <p>Rank: ${result.rank}</p>
+                   `;
+            }
+        });
+        connection.on("GetFinalResult", () => {
+            connection.invoke("GetFinalResult", gamePin);
+        });
+
+        connection.on("FinalResultForHost", (result) => {
+            if (result) {
+                console.log('FinalResult: ', result);
+                //clearCountdown();
+                resultContainer.style.display = "block";
+                questionContainer.style.display = "none";
+                resultContainer.innerHTML = `
+                        <h2>Final Result</h2>
+                        <ul>${result.map((r, index) => `<li><p>${index + 1}</p> <p>${r.playerName}</p> <p>${r.score}</p></li>`).join("")}</ul>
+                                `;
+                document.getElementById("nextQuestionButton").style.display = "none";
+                //document.getElementById("backHome").style.display = "flex";
+                }
+            
+        });
+
+        connection.on("FinalResultForPlayer", (result) => {
+            if (result) {
+                console.log('FinalResult: ', result);
+                const ranks = result.ranks;
+                const rank = result.rank;
+                //clearCountdown();
+                resultContainer.style.display = "block";
+                questionContainer.style.display = "none";
+                resultContainer.innerHTML = `
+                      <h2>Final Result</h2>
+                      <ul>${ranks.map((r, index) => `<li class="${rank===(index + 1) ? 'rankActive' : ''}"><p>${index + 1}</p> <p>${r.playerName}</p> <p>${r.score}</p></li>`).join("")}</ul>
+                                        `;
+
+                document.getElementById("nextQuestionButton").style.display = "none";
+                //document.getElementById("backHome").style.display = "flex";
+            }
+
+        });
+
+        connection.on("GameEnded", (message) => {
+            alert(message);
+            window.location.assign("/Home/Index");
+        });
+
+        connection.on("NextQuestion", () => { 
+            connection.invoke("GetCurrentQuestion", gamePin);
+        });
+
+        if (isHost) {
+            document.getElementById("nextQuestionButton").addEventListener("click", () => {
+                console.log('Call next question');
+                connection.invoke("NextQuestion", gamePin)
+                    .catch(err => console.error("NextQuestion Error:", err));
+            });
+        }
+        connection.on("SubmitFailed", (message) => {
+            alter(message);
+        });
+        function startCountdown(seconds) {
+            clearCountdown();
+            
+            timeLeft = seconds;
+            countdownElement.innerHTML = `Time Left: ${timeLeft}s`;
+
+            countdownTimer = setInterval(() => {
+                timeLeft--;
+                countdownElement.innerHTML = `Time Left: ${timeLeft}s`;
+                if (timeLeft <= 0) {
+                    clearCountdown();
+                    if (isHost) {
+                        connection.invoke("EndQuestion", gamePin);
+                    }
+                }
+            }, 1000);
+        }
+
+        function clearCountdown() {
+            if (countdownTimer) {
+                clearInterval(countdownTimer);
+                countdownTimer = null;
+            }
+        }
+
+        function selectAnswer(optionId, index) {
+            if (!isHost) {
+                // Xóa class active khỏi tất cả các nút trước đó
+                document.querySelectorAll(".answer-btn").forEach(btn => {
+                    btn.classList.remove("active");
+                });
+
+                // Thêm class active vào nút được chọn
+                const selectedButton = document.querySelectorAll(".answer-btn")[index];
+                selectedButton.classList.add("active");
+
+                // Gửi câu trả lời và vô hiệu hóa các nút
+                connection.invoke("SubmitAnswer", gamePin, optionId, timeLeft)
+                    .catch(err => console.error("SubmitAnswer Error:", err));
+                document.querySelectorAll(".answer-btn").forEach(btn => btn.disabled = true);
+            }
+        }
+    </script>
+</body>
+</html>

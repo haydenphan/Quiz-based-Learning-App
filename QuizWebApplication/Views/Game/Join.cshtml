@@ -1,0 +1,77 @@
+﻿@{
+    ViewData["Title"] = "Join Game";
+    Layout = null;
+}
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Join Game - QuizPulse</title>
+    <link rel="stylesheet" href="~/css/join.css">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="join-container">
+        <h1>Join a Game</h1>
+        <input type="text" id="gamePinInput" placeholder="Enter Game PIN" maxlength="6">
+        <input type="text" id="nicknameInput" placeholder="Enter Your Nickname" maxlength="15">
+        <button id="joinButton">Join</button>
+        <div id="errorMessage" class="error-message"></div>
+        <a class="back-home-btn" asp-controller="Home" asp-action="Index">Home</a>
+    </div>
+    <script src="~/lib/signalr/dist/browser/signalr.js"></script>
+    <script src="~/lib/signalr/dist/browser/signalr.min.js"></script>
+    <script src="~/js/signalr-client.js"></script>
+    <script>
+        connection.start()
+            .then(() => {
+                console.log("SignalR Connected");
+                //connection.invoke("NotifyConnected"); // Gửi tín hiệu khi kết nối
+            })
+            .catch(err => console.error("SignalR Connection Error: ", err));
+        const errorMessage = document.getElementById("errorMessage");
+
+        function showError(message) {
+            errorMessage.textContent = message;
+            errorMessage.style.display = "block";
+            setTimeout(() => {
+                errorMessage.style.display = "none";
+            }, 3000);
+        }
+
+        connection.on("JoinFailed", (message) => {
+            showError(message);
+        });
+        connection.on("JoinSuccess", (gamePin, quizId, connectionId) => {
+            /*const nickname = document.getElementById("nicknameInput").value.trim();
+            localStorage.setItem("nickname", nickname);*/
+            console.error('gamePin && quizId: ', gamePin, quizId, connectionId);
+            window.location.assign(`/Game/Lobby?quizId=${quizId}&gamePin=${gamePin}&connectionId=${connectionId}`);
+        });
+        document.getElementById("joinButton").addEventListener("click", () => {
+            const gamePin = document.getElementById("gamePinInput").value.trim();
+            const nickname = document.getElementById("nicknameInput").value.trim();
+
+            if (!gamePin || !nickname) {
+                showError("Please enter both Game PIN and Nickname.");
+                return;
+            }
+
+            if (!/^\d{6}$/.test(gamePin)) {
+                showError("Game PIN must be a 6-digit number.");
+                return;
+            }
+
+            if (nickname.length < 3) {
+                showError("Nickname must be at least 3 characters long.");
+                return;
+            }
+
+            connection.invoke("JoinGame", gamePin, nickname)
+                .catch(err => console.error("JoinGame Error: ", err));
+        });
+    </script>
+</body>
+</html>
