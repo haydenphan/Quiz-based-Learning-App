@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "bZmk7KigrhMycd3mkgKZx6u4S2YJV6jmfsqjYikkCx0=",
+  "Hash": "588Ik+AwRhIyty+2YGwefbj1HjkCxfCkgIYJ0WKBHQ4=",
   "Source": "QuizWebApplication",
   "BasePath": "_content/QuizWebApplication",
   "Mode": "Default",
@@ -10,17 +10,17 @@
     {
       "Name": "QuizWebApplication\\wwwroot",
       "Source": "QuizWebApplication",
-      "ContentRoot": "C:\\Users\\ASUS-PRO\\source\\repos\\Quiz-based Learning App\\QuizWebApplication\\wwwroot\\",
+      "ContentRoot": "E:\\PRN222\\Group Project\\Quiz-based-Learning-App\\QuizWebApplication\\wwwroot\\",
       "BasePath": "_content/QuizWebApplication",
       "Pattern": "**"
     }
   ],
   "Assets": [
     {
-      "Identity": "C:\\Users\\ASUS-PRO\\source\\repos\\Quiz-based Learning App\\QuizWebApplication\\obj\\Debug\\net8.0\\scopedcss\\bundle\\QuizWebApplication.styles.css",
+      "Identity": "E:\\PRN222\\Group Project\\Quiz-based-Learning-App\\QuizWebApplication\\obj\\Debug\\net8.0\\scopedcss\\bundle\\QuizWebApplication.styles.css",
       "SourceId": "QuizWebApplication",
       "SourceType": "Computed",
-      "ContentRoot": "C:\\Users\\ASUS-PRO\\source\\repos\\Quiz-based Learning App\\QuizWebApplication\\obj\\Debug\\net8.0\\scopedcss\\bundle\\",
+      "ContentRoot": "E:\\PRN222\\Group Project\\Quiz-based-Learning-App\\QuizWebApplication\\obj\\Debug\\net8.0\\scopedcss\\bundle\\",
       "BasePath": "_content/QuizWebApplication",
       "RelativePath": "QuizWebApplication.styles.css",
       "AssetKind": "All",
@@ -33,13 +33,13 @@
       "AssetTraitValue": "ApplicationBundle",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "C:\\Users\\ASUS-PRO\\source\\repos\\Quiz-based Learning App\\QuizWebApplication\\obj\\Debug\\net8.0\\scopedcss\\bundle\\QuizWebApplication.styles.css"
+      "OriginalItemSpec": "E:\\PRN222\\Group Project\\Quiz-based-Learning-App\\QuizWebApplication\\obj\\Debug\\net8.0\\scopedcss\\bundle\\QuizWebApplication.styles.css"
     },
     {
-      "Identity": "C:\\Users\\ASUS-PRO\\source\\repos\\Quiz-based Learning App\\QuizWebApplication\\obj\\Debug\\net8.0\\scopedcss\\projectbundle\\QuizWebApplication.bundle.scp.css",
+      "Identity": "E:\\PRN222\\Group Project\\Quiz-based-Learning-App\\QuizWebApplication\\obj\\Debug\\net8.0\\scopedcss\\projectbundle\\QuizWebApplication.bundle.scp.css",
       "SourceId": "QuizWebApplication",
       "SourceType": "Computed",
-      "ContentRoot": "C:\\Users\\ASUS-PRO\\source\\repos\\Quiz-based Learning App\\QuizWebApplication\\obj\\Debug\\net8.0\\scopedcss\\projectbundle\\",
+      "ContentRoot": "E:\\PRN222\\Group Project\\Quiz-based-Learning-App\\QuizWebApplication\\obj\\Debug\\net8.0\\scopedcss\\projectbundle\\",
       "BasePath": "_content/QuizWebApplication",
       "RelativePath": "QuizWebApplication.bundle.scp.css",
       "AssetKind": "All",
@@ -52,13 +52,89 @@
       "AssetTraitValue": "ProjectBundle",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "C:\\Users\\ASUS-PRO\\source\\repos\\Quiz-based Learning App\\QuizWebApplication\\obj\\Debug\\net8.0\\scopedcss\\projectbundle\\QuizWebApplication.bundle.scp.css"
+      "OriginalItemSpec": "E:\\PRN222\\Group Project\\Quiz-based-Learning-App\\QuizWebApplication\\obj\\Debug\\net8.0\\scopedcss\\projectbundle\\QuizWebApplication.bundle.scp.css"
     },
     {
-      "Identity": "C:\\Users\\ASUS-PRO\\source\\repos\\Quiz-based Learning App\\QuizWebApplication\\wwwroot\\css\\site.css",
+      "Identity": "E:\\PRN222\\Group Project\\Quiz-based-Learning-App\\QuizWebApplication\\wwwroot\\css\\auth.css",
       "SourceId": "QuizWebApplication",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\ASUS-PRO\\source\\repos\\Quiz-based Learning App\\QuizWebApplication\\wwwroot\\",
+      "ContentRoot": "E:\\PRN222\\Group Project\\Quiz-based-Learning-App\\QuizWebApplication\\wwwroot\\",
+      "BasePath": "_content/QuizWebApplication",
+      "RelativePath": "css/auth.css",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "PreferTarget",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\css\\auth.css"
+    },
+    {
+      "Identity": "E:\\PRN222\\Group Project\\Quiz-based-Learning-App\\QuizWebApplication\\wwwroot\\css\\game.css",
+      "SourceId": "QuizWebApplication",
+      "SourceType": "Discovered",
+      "ContentRoot": "E:\\PRN222\\Group Project\\Quiz-based-Learning-App\\QuizWebApplication\\wwwroot\\",
+      "BasePath": "_content/QuizWebApplication",
+      "RelativePath": "css/game.css",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "PreferTarget",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\css\\game.css"
+    },
+    {
+      "Identity": "E:\\PRN222\\Group Project\\Quiz-based-Learning-App\\QuizWebApplication\\wwwroot\\css\\join.css",
+      "SourceId": "QuizWebApplication",
+      "SourceType": "Discovered",
+      "ContentRoot": "E:\\PRN222\\Group Project\\Quiz-based-Learning-App\\QuizWebApplication\\wwwroot\\",
+      "BasePath": "_content/QuizWebApplication",
+      "RelativePath": "css/join.css",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "PreferTarget",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\css\\join.css"
+    },
+    {
+      "Identity": "E:\\PRN222\\Group Project\\Quiz-based-Learning-App\\QuizWebApplication\\wwwroot\\css\\lobby.css",
+      "SourceId": "QuizWebApplication",
+      "SourceType": "Discovered",
+      "ContentRoot": "E:\\PRN222\\Group Project\\Quiz-based-Learning-App\\QuizWebApplication\\wwwroot\\",
+      "BasePath": "_content/QuizWebApplication",
+      "RelativePath": "css/lobby.css",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "PreferTarget",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\css\\lobby.css"
+    },
+    {
+      "Identity": "E:\\PRN222\\Group Project\\Quiz-based-Learning-App\\QuizWebApplication\\wwwroot\\css\\site.css",
+      "SourceId": "QuizWebApplication",
+      "SourceType": "Discovered",
+      "ContentRoot": "E:\\PRN222\\Group Project\\Quiz-based-Learning-App\\QuizWebApplication\\wwwroot\\",
       "BasePath": "_content/QuizWebApplication",
       "RelativePath": "css/site.css",
       "AssetKind": "All",
@@ -74,10 +150,10 @@
       "OriginalItemSpec": "wwwroot\\css\\site.css"
     },
     {
-      "Identity": "C:\\Users\\ASUS-PRO\\source\\repos\\Quiz-based Learning App\\QuizWebApplication\\wwwroot\\favicon.ico",
+      "Identity": "E:\\PRN222\\Group Project\\Quiz-based-Learning-App\\QuizWebApplication\\wwwroot\\favicon.ico",
       "SourceId": "QuizWebApplication",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\ASUS-PRO\\source\\repos\\Quiz-based Learning App\\QuizWebApplication\\wwwroot\\",
+      "ContentRoot": "E:\\PRN222\\Group Project\\Quiz-based-Learning-App\\QuizWebApplication\\wwwroot\\",
       "BasePath": "_content/QuizWebApplication",
       "RelativePath": "favicon.ico",
       "AssetKind": "All",
@@ -93,10 +169,67 @@
       "OriginalItemSpec": "wwwroot\\favicon.ico"
     },
     {
-      "Identity": "C:\\Users\\ASUS-PRO\\source\\repos\\Quiz-based Learning App\\QuizWebApplication\\wwwroot\\js\\site.js",
+      "Identity": "E:\\PRN222\\Group Project\\Quiz-based-Learning-App\\QuizWebApplication\\wwwroot\\imgs\\player.png",
       "SourceId": "QuizWebApplication",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\ASUS-PRO\\source\\repos\\Quiz-based Learning App\\QuizWebApplication\\wwwroot\\",
+      "ContentRoot": "E:\\PRN222\\Group Project\\Quiz-based-Learning-App\\QuizWebApplication\\wwwroot\\",
+      "BasePath": "_content/QuizWebApplication",
+      "RelativePath": "imgs/player.png",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "PreferTarget",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\imgs\\player.png"
+    },
+    {
+      "Identity": "E:\\PRN222\\Group Project\\Quiz-based-Learning-App\\QuizWebApplication\\wwwroot\\js\\game.js",
+      "SourceId": "QuizWebApplication",
+      "SourceType": "Discovered",
+      "ContentRoot": "E:\\PRN222\\Group Project\\Quiz-based-Learning-App\\QuizWebApplication\\wwwroot\\",
+      "BasePath": "_content/QuizWebApplication",
+      "RelativePath": "js/game.js",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "PreferTarget",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\js\\game.js"
+    },
+    {
+      "Identity": "E:\\PRN222\\Group Project\\Quiz-based-Learning-App\\QuizWebApplication\\wwwroot\\js\\signalr-client.js",
+      "SourceId": "QuizWebApplication",
+      "SourceType": "Discovered",
+      "ContentRoot": "E:\\PRN222\\Group Project\\Quiz-based-Learning-App\\QuizWebApplication\\wwwroot\\",
+      "BasePath": "_content/QuizWebApplication",
+      "RelativePath": "js/signalr-client.js",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "PreferTarget",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\js\\signalr-client.js"
+    },
+    {
+      "Identity": "E:\\PRN222\\Group Project\\Quiz-based-Learning-App\\QuizWebApplication\\wwwroot\\js\\site.js",
+      "SourceId": "QuizWebApplication",
+      "SourceType": "Discovered",
+      "ContentRoot": "E:\\PRN222\\Group Project\\Quiz-based-Learning-App\\QuizWebApplication\\wwwroot\\",
       "BasePath": "_content/QuizWebApplication",
       "RelativePath": "js/site.js",
       "AssetKind": "All",
@@ -112,10 +245,10 @@
       "OriginalItemSpec": "wwwroot\\js\\site.js"
     },
     {
-      "Identity": "C:\\Users\\ASUS-PRO\\source\\repos\\Quiz-based Learning App\\QuizWebApplication\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.css",
+      "Identity": "E:\\PRN222\\Group Project\\Quiz-based-Learning-App\\QuizWebApplication\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.css",
       "SourceId": "QuizWebApplication",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\ASUS-PRO\\source\\repos\\Quiz-based Learning App\\QuizWebApplication\\wwwroot\\",
+      "ContentRoot": "E:\\PRN222\\Group Project\\Quiz-based-Learning-App\\QuizWebApplication\\wwwroot\\",
       "BasePath": "_content/QuizWebApplication",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap.css",
       "AssetKind": "All",
@@ -131,10 +264,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.css"
     },
     {
-      "Identity": "C:\\Users\\ASUS-PRO\\source\\repos\\Quiz-based Learning App\\QuizWebApplication\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.css.map",
+      "Identity": "E:\\PRN222\\Group Project\\Quiz-based-Learning-App\\QuizWebApplication\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.css.map",
       "SourceId": "QuizWebApplication",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\ASUS-PRO\\source\\repos\\Quiz-based Learning App\\QuizWebApplication\\wwwroot\\",
+      "ContentRoot": "E:\\PRN222\\Group Project\\Quiz-based-Learning-App\\QuizWebApplication\\wwwroot\\",
       "BasePath": "_content/QuizWebApplication",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap.css.map",
       "AssetKind": "All",
@@ -150,10 +283,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.css.map"
     },
     {
-      "Identity": "C:\\Users\\ASUS-PRO\\source\\repos\\Quiz-based Learning App\\QuizWebApplication\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.min.css",
+      "Identity": "E:\\PRN222\\Group Project\\Quiz-based-Learning-App\\QuizWebApplication\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.min.css",
       "SourceId": "QuizWebApplication",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\ASUS-PRO\\source\\repos\\Quiz-based Learning App\\QuizWebApplication\\wwwroot\\",
+      "ContentRoot": "E:\\PRN222\\Group Project\\Quiz-based-Learning-App\\QuizWebApplication\\wwwroot\\",
       "BasePath": "_content/QuizWebApplication",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap.min.css",
       "AssetKind": "All",
@@ -169,10 +302,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.min.css"
     },
     {
-      "Identity": "C:\\Users\\ASUS-PRO\\source\\repos\\Quiz-based Learning App\\QuizWebApplication\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.min.css.map",
+      "Identity": "E:\\PRN222\\Group Project\\Quiz-based-Learning-App\\QuizWebApplication\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.min.css.map",
       "SourceId": "QuizWebApplication",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\ASUS-PRO\\source\\repos\\Quiz-based Learning App\\QuizWebApplication\\wwwroot\\",
+      "ContentRoot": "E:\\PRN222\\Group Project\\Quiz-based-Learning-App\\QuizWebApplication\\wwwroot\\",
       "BasePath": "_content/QuizWebApplication",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap.min.css.map",
       "AssetKind": "All",
@@ -188,10 +321,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.min.css.map"
     },
     {
-      "Identity": "C:\\Users\\ASUS-PRO\\source\\repos\\Quiz-based Learning App\\QuizWebApplication\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.css",
+      "Identity": "E:\\PRN222\\Group Project\\Quiz-based-Learning-App\\QuizWebApplication\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.css",
       "SourceId": "QuizWebApplication",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\ASUS-PRO\\source\\repos\\Quiz-based Learning App\\QuizWebApplication\\wwwroot\\",
+      "ContentRoot": "E:\\PRN222\\Group Project\\Quiz-based-Learning-App\\QuizWebApplication\\wwwroot\\",
       "BasePath": "_content/QuizWebApplication",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap.rtl.css",
       "AssetKind": "All",
@@ -207,10 +340,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.css"
     },
     {
-      "Identity": "C:\\Users\\ASUS-PRO\\source\\repos\\Quiz-based Learning App\\QuizWebApplication\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.css.map",
+      "Identity": "E:\\PRN222\\Group Project\\Quiz-based-Learning-App\\QuizWebApplication\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.css.map",
       "SourceId": "QuizWebApplication",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\ASUS-PRO\\source\\repos\\Quiz-based Learning App\\QuizWebApplication\\wwwroot\\",
+      "ContentRoot": "E:\\PRN222\\Group Project\\Quiz-based-Learning-App\\QuizWebApplication\\wwwroot\\",
       "BasePath": "_content/QuizWebApplication",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap.rtl.css.map",
       "AssetKind": "All",
@@ -226,10 +359,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.css.map"
     },
     {
-      "Identity": "C:\\Users\\ASUS-PRO\\source\\repos\\Quiz-based Learning App\\QuizWebApplication\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.min.css",
+      "Identity": "E:\\PRN222\\Group Project\\Quiz-based-Learning-App\\QuizWebApplication\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.min.css",
       "SourceId": "QuizWebApplication",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\ASUS-PRO\\source\\repos\\Quiz-based Learning App\\QuizWebApplication\\wwwroot\\",
+      "ContentRoot": "E:\\PRN222\\Group Project\\Quiz-based-Learning-App\\QuizWebApplication\\wwwroot\\",
       "BasePath": "_content/QuizWebApplication",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap.rtl.min.css",
       "AssetKind": "All",
@@ -245,10 +378,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.min.css"
     },
     {
-      "Identity": "C:\\Users\\ASUS-PRO\\source\\repos\\Quiz-based Learning App\\QuizWebApplication\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.min.css.map",
+      "Identity": "E:\\PRN222\\Group Project\\Quiz-based-Learning-App\\QuizWebApplication\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.min.css.map",
       "SourceId": "QuizWebApplication",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\ASUS-PRO\\source\\repos\\Quiz-based Learning App\\QuizWebApplication\\wwwroot\\",
+      "ContentRoot": "E:\\PRN222\\Group Project\\Quiz-based-Learning-App\\QuizWebApplication\\wwwroot\\",
       "BasePath": "_content/QuizWebApplication",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap.rtl.min.css.map",
       "AssetKind": "All",
@@ -264,10 +397,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.min.css.map"
     },
     {
-      "Identity": "C:\\Users\\ASUS-PRO\\source\\repos\\Quiz-based Learning App\\QuizWebApplication\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.css",
+      "Identity": "E:\\PRN222\\Group Project\\Quiz-based-Learning-App\\QuizWebApplication\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.css",
       "SourceId": "QuizWebApplication",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\ASUS-PRO\\source\\repos\\Quiz-based Learning App\\QuizWebApplication\\wwwroot\\",
+      "ContentRoot": "E:\\PRN222\\Group Project\\Quiz-based-Learning-App\\QuizWebApplication\\wwwroot\\",
       "BasePath": "_content/QuizWebApplication",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap-grid.css",
       "AssetKind": "All",
@@ -283,10 +416,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.css"
     },
     {
-      "Identity": "C:\\Users\\ASUS-PRO\\source\\repos\\Quiz-based Learning App\\QuizWebApplication\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.css.map",
+      "Identity": "E:\\PRN222\\Group Project\\Quiz-based-Learning-App\\QuizWebApplication\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.css.map",
       "SourceId": "QuizWebApplication",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\ASUS-PRO\\source\\repos\\Quiz-based Learning App\\QuizWebApplication\\wwwroot\\",
+      "ContentRoot": "E:\\PRN222\\Group Project\\Quiz-based-Learning-App\\QuizWebApplication\\wwwroot\\",
       "BasePath": "_content/QuizWebApplication",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap-grid.css.map",
       "AssetKind": "All",
@@ -302,10 +435,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.css.map"
     },
     {
-      "Identity": "C:\\Users\\ASUS-PRO\\source\\repos\\Quiz-based Learning App\\QuizWebApplication\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.min.css",
+      "Identity": "E:\\PRN222\\Group Project\\Quiz-based-Learning-App\\QuizWebApplication\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.min.css",
       "SourceId": "QuizWebApplication",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\ASUS-PRO\\source\\repos\\Quiz-based Learning App\\QuizWebApplication\\wwwroot\\",
+      "ContentRoot": "E:\\PRN222\\Group Project\\Quiz-based-Learning-App\\QuizWebApplication\\wwwroot\\",
       "BasePath": "_content/QuizWebApplication",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap-grid.min.css",
       "AssetKind": "All",
@@ -321,10 +454,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.min.css"
     },
     {
-      "Identity": "C:\\Users\\ASUS-PRO\\source\\repos\\Quiz-based Learning App\\QuizWebApplication\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.min.css.map",
+      "Identity": "E:\\PRN222\\Group Project\\Quiz-based-Learning-App\\QuizWebApplication\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.min.css.map",
       "SourceId": "QuizWebApplication",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\ASUS-PRO\\source\\repos\\Quiz-based Learning App\\QuizWebApplication\\wwwroot\\",
+      "ContentRoot": "E:\\PRN222\\Group Project\\Quiz-based-Learning-App\\QuizWebApplication\\wwwroot\\",
       "BasePath": "_content/QuizWebApplication",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap-grid.min.css.map",
       "AssetKind": "All",
@@ -340,10 +473,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.min.css.map"
     },
     {
-      "Identity": "C:\\Users\\ASUS-PRO\\source\\repos\\Quiz-based Learning App\\QuizWebApplication\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.css",
+      "Identity": "E:\\PRN222\\Group Project\\Quiz-based-Learning-App\\QuizWebApplication\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.css",
       "SourceId": "QuizWebApplication",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\ASUS-PRO\\source\\repos\\Quiz-based Learning App\\QuizWebApplication\\wwwroot\\",
+      "ContentRoot": "E:\\PRN222\\Group Project\\Quiz-based-Learning-App\\QuizWebApplication\\wwwroot\\",
       "BasePath": "_content/QuizWebApplication",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap-grid.rtl.css",
       "AssetKind": "All",
@@ -359,10 +492,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.css"
     },
     {
-      "Identity": "C:\\Users\\ASUS-PRO\\source\\repos\\Quiz-based Learning App\\QuizWebApplication\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.css.map",
+      "Identity": "E:\\PRN222\\Group Project\\Quiz-based-Learning-App\\QuizWebApplication\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.css.map",
       "SourceId": "QuizWebApplication",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\ASUS-PRO\\source\\repos\\Quiz-based Learning App\\QuizWebApplication\\wwwroot\\",
+      "ContentRoot": "E:\\PRN222\\Group Project\\Quiz-based-Learning-App\\QuizWebApplication\\wwwroot\\",
       "BasePath": "_content/QuizWebApplication",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap-grid.rtl.css.map",
       "AssetKind": "All",
@@ -378,10 +511,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.css.map"
     },
     {
-      "Identity": "C:\\Users\\ASUS-PRO\\source\\repos\\Quiz-based Learning App\\QuizWebApplication\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.min.css",
+      "Identity": "E:\\PRN222\\Group Project\\Quiz-based-Learning-App\\QuizWebApplication\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.min.css",
       "SourceId": "QuizWebApplication",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\ASUS-PRO\\source\\repos\\Quiz-based Learning App\\QuizWebApplication\\wwwroot\\",
+      "ContentRoot": "E:\\PRN222\\Group Project\\Quiz-based-Learning-App\\QuizWebApplication\\wwwroot\\",
       "BasePath": "_content/QuizWebApplication",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap-grid.rtl.min.css",
       "AssetKind": "All",
@@ -397,10 +530,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.min.css"
     },
     {
-      "Identity": "C:\\Users\\ASUS-PRO\\source\\repos\\Quiz-based Learning App\\QuizWebApplication\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.min.css.map",
+      "Identity": "E:\\PRN222\\Group Project\\Quiz-based-Learning-App\\QuizWebApplication\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.min.css.map",
       "SourceId": "QuizWebApplication",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\ASUS-PRO\\source\\repos\\Quiz-based Learning App\\QuizWebApplication\\wwwroot\\",
+      "ContentRoot": "E:\\PRN222\\Group Project\\Quiz-based-Learning-App\\QuizWebApplication\\wwwroot\\",
       "BasePath": "_content/QuizWebApplication",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap-grid.rtl.min.css.map",
       "AssetKind": "All",
@@ -416,10 +549,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.min.css.map"
     },
     {
-      "Identity": "C:\\Users\\ASUS-PRO\\source\\repos\\Quiz-based Learning App\\QuizWebApplication\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.css",
+      "Identity": "E:\\PRN222\\Group Project\\Quiz-based-Learning-App\\QuizWebApplication\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.css",
       "SourceId": "QuizWebApplication",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\ASUS-PRO\\source\\repos\\Quiz-based Learning App\\QuizWebApplication\\wwwroot\\",
+      "ContentRoot": "E:\\PRN222\\Group Project\\Quiz-based-Learning-App\\QuizWebApplication\\wwwroot\\",
       "BasePath": "_content/QuizWebApplication",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap-reboot.css",
       "AssetKind": "All",
@@ -435,10 +568,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.css"
     },
     {
-      "Identity": "C:\\Users\\ASUS-PRO\\source\\repos\\Quiz-based Learning App\\QuizWebApplication\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.css.map",
+      "Identity": "E:\\PRN222\\Group Project\\Quiz-based-Learning-App\\QuizWebApplication\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.css.map",
       "SourceId": "QuizWebApplication",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\ASUS-PRO\\source\\repos\\Quiz-based Learning App\\QuizWebApplication\\wwwroot\\",
+      "ContentRoot": "E:\\PRN222\\Group Project\\Quiz-based-Learning-App\\QuizWebApplication\\wwwroot\\",
       "BasePath": "_content/QuizWebApplication",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap-reboot.css.map",
       "AssetKind": "All",
@@ -454,10 +587,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.css.map"
     },
     {
-      "Identity": "C:\\Users\\ASUS-PRO\\source\\repos\\Quiz-based Learning App\\QuizWebApplication\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.min.css",
+      "Identity": "E:\\PRN222\\Group Project\\Quiz-based-Learning-App\\QuizWebApplication\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.min.css",
       "SourceId": "QuizWebApplication",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\ASUS-PRO\\source\\repos\\Quiz-based Learning App\\QuizWebApplication\\wwwroot\\",
+      "ContentRoot": "E:\\PRN222\\Group Project\\Quiz-based-Learning-App\\QuizWebApplication\\wwwroot\\",
       "BasePath": "_content/QuizWebApplication",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap-reboot.min.css",
       "AssetKind": "All",
@@ -473,10 +606,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.min.css"
     },
     {
-      "Identity": "C:\\Users\\ASUS-PRO\\source\\repos\\Quiz-based Learning App\\QuizWebApplication\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.min.css.map",
+      "Identity": "E:\\PRN222\\Group Project\\Quiz-based-Learning-App\\QuizWebApplication\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.min.css.map",
       "SourceId": "QuizWebApplication",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\ASUS-PRO\\source\\repos\\Quiz-based Learning App\\QuizWebApplication\\wwwroot\\",
+      "ContentRoot": "E:\\PRN222\\Group Project\\Quiz-based-Learning-App\\QuizWebApplication\\wwwroot\\",
       "BasePath": "_content/QuizWebApplication",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap-reboot.min.css.map",
       "AssetKind": "All",
@@ -492,10 +625,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.min.css.map"
     },
     {
-      "Identity": "C:\\Users\\ASUS-PRO\\source\\repos\\Quiz-based Learning App\\QuizWebApplication\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.css",
+      "Identity": "E:\\PRN222\\Group Project\\Quiz-based-Learning-App\\QuizWebApplication\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.css",
       "SourceId": "QuizWebApplication",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\ASUS-PRO\\source\\repos\\Quiz-based Learning App\\QuizWebApplication\\wwwroot\\",
+      "ContentRoot": "E:\\PRN222\\Group Project\\Quiz-based-Learning-App\\QuizWebApplication\\wwwroot\\",
       "BasePath": "_content/QuizWebApplication",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap-reboot.rtl.css",
       "AssetKind": "All",
@@ -511,10 +644,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.css"
     },
     {
-      "Identity": "C:\\Users\\ASUS-PRO\\source\\repos\\Quiz-based Learning App\\QuizWebApplication\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.css.map",
+      "Identity": "E:\\PRN222\\Group Project\\Quiz-based-Learning-App\\QuizWebApplication\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.css.map",
       "SourceId": "QuizWebApplication",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\ASUS-PRO\\source\\repos\\Quiz-based Learning App\\QuizWebApplication\\wwwroot\\",
+      "ContentRoot": "E:\\PRN222\\Group Project\\Quiz-based-Learning-App\\QuizWebApplication\\wwwroot\\",
       "BasePath": "_content/QuizWebApplication",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap-reboot.rtl.css.map",
       "AssetKind": "All",
@@ -530,10 +663,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.css.map"
     },
     {
-      "Identity": "C:\\Users\\ASUS-PRO\\source\\repos\\Quiz-based Learning App\\QuizWebApplication\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.min.css",
+      "Identity": "E:\\PRN222\\Group Project\\Quiz-based-Learning-App\\QuizWebApplication\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.min.css",
       "SourceId": "QuizWebApplication",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\ASUS-PRO\\source\\repos\\Quiz-based Learning App\\QuizWebApplication\\wwwroot\\",
+      "ContentRoot": "E:\\PRN222\\Group Project\\Quiz-based-Learning-App\\QuizWebApplication\\wwwroot\\",
       "BasePath": "_content/QuizWebApplication",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap-reboot.rtl.min.css",
       "AssetKind": "All",
@@ -549,10 +682,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.min.css"
     },
     {
-      "Identity": "C:\\Users\\ASUS-PRO\\source\\repos\\Quiz-based Learning App\\QuizWebApplication\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.min.css.map",
+      "Identity": "E:\\PRN222\\Group Project\\Quiz-based-Learning-App\\QuizWebApplication\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.min.css.map",
       "SourceId": "QuizWebApplication",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\ASUS-PRO\\source\\repos\\Quiz-based Learning App\\QuizWebApplication\\wwwroot\\",
+      "ContentRoot": "E:\\PRN222\\Group Project\\Quiz-based-Learning-App\\QuizWebApplication\\wwwroot\\",
       "BasePath": "_content/QuizWebApplication",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap-reboot.rtl.min.css.map",
       "AssetKind": "All",
@@ -568,10 +701,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.min.css.map"
     },
     {
-      "Identity": "C:\\Users\\ASUS-PRO\\source\\repos\\Quiz-based Learning App\\QuizWebApplication\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.css",
+      "Identity": "E:\\PRN222\\Group Project\\Quiz-based-Learning-App\\QuizWebApplication\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.css",
       "SourceId": "QuizWebApplication",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\ASUS-PRO\\source\\repos\\Quiz-based Learning App\\QuizWebApplication\\wwwroot\\",
+      "ContentRoot": "E:\\PRN222\\Group Project\\Quiz-based-Learning-App\\QuizWebApplication\\wwwroot\\",
       "BasePath": "_content/QuizWebApplication",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap-utilities.css",
       "AssetKind": "All",
@@ -587,10 +720,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.css"
     },
     {
-      "Identity": "C:\\Users\\ASUS-PRO\\source\\repos\\Quiz-based Learning App\\QuizWebApplication\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.css.map",
+      "Identity": "E:\\PRN222\\Group Project\\Quiz-based-Learning-App\\QuizWebApplication\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.css.map",
       "SourceId": "QuizWebApplication",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\ASUS-PRO\\source\\repos\\Quiz-based Learning App\\QuizWebApplication\\wwwroot\\",
+      "ContentRoot": "E:\\PRN222\\Group Project\\Quiz-based-Learning-App\\QuizWebApplication\\wwwroot\\",
       "BasePath": "_content/QuizWebApplication",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap-utilities.css.map",
       "AssetKind": "All",
@@ -606,10 +739,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.css.map"
     },
     {
-      "Identity": "C:\\Users\\ASUS-PRO\\source\\repos\\Quiz-based Learning App\\QuizWebApplication\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.min.css",
+      "Identity": "E:\\PRN222\\Group Project\\Quiz-based-Learning-App\\QuizWebApplication\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.min.css",
       "SourceId": "QuizWebApplication",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\ASUS-PRO\\source\\repos\\Quiz-based Learning App\\QuizWebApplication\\wwwroot\\",
+      "ContentRoot": "E:\\PRN222\\Group Project\\Quiz-based-Learning-App\\QuizWebApplication\\wwwroot\\",
       "BasePath": "_content/QuizWebApplication",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap-utilities.min.css",
       "AssetKind": "All",
@@ -625,10 +758,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.min.css"
     },
     {
-      "Identity": "C:\\Users\\ASUS-PRO\\source\\repos\\Quiz-based Learning App\\QuizWebApplication\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.min.css.map",
+      "Identity": "E:\\PRN222\\Group Project\\Quiz-based-Learning-App\\QuizWebApplication\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.min.css.map",
       "SourceId": "QuizWebApplication",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\ASUS-PRO\\source\\repos\\Quiz-based Learning App\\QuizWebApplication\\wwwroot\\",
+      "ContentRoot": "E:\\PRN222\\Group Project\\Quiz-based-Learning-App\\QuizWebApplication\\wwwroot\\",
       "BasePath": "_content/QuizWebApplication",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap-utilities.min.css.map",
       "AssetKind": "All",
@@ -644,10 +777,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.min.css.map"
     },
     {
-      "Identity": "C:\\Users\\ASUS-PRO\\source\\repos\\Quiz-based Learning App\\QuizWebApplication\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.css",
+      "Identity": "E:\\PRN222\\Group Project\\Quiz-based-Learning-App\\QuizWebApplication\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.css",
       "SourceId": "QuizWebApplication",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\ASUS-PRO\\source\\repos\\Quiz-based Learning App\\QuizWebApplication\\wwwroot\\",
+      "ContentRoot": "E:\\PRN222\\Group Project\\Quiz-based-Learning-App\\QuizWebApplication\\wwwroot\\",
       "BasePath": "_content/QuizWebApplication",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap-utilities.rtl.css",
       "AssetKind": "All",
@@ -663,10 +796,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.css"
     },
     {
-      "Identity": "C:\\Users\\ASUS-PRO\\source\\repos\\Quiz-based Learning App\\QuizWebApplication\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.css.map",
+      "Identity": "E:\\PRN222\\Group Project\\Quiz-based-Learning-App\\QuizWebApplication\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.css.map",
       "SourceId": "QuizWebApplication",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\ASUS-PRO\\source\\repos\\Quiz-based Learning App\\QuizWebApplication\\wwwroot\\",
+      "ContentRoot": "E:\\PRN222\\Group Project\\Quiz-based-Learning-App\\QuizWebApplication\\wwwroot\\",
       "BasePath": "_content/QuizWebApplication",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap-utilities.rtl.css.map",
       "AssetKind": "All",
@@ -682,10 +815,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.css.map"
     },
     {
-      "Identity": "C:\\Users\\ASUS-PRO\\source\\repos\\Quiz-based Learning App\\QuizWebApplication\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.min.css",
+      "Identity": "E:\\PRN222\\Group Project\\Quiz-based-Learning-App\\QuizWebApplication\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.min.css",
       "SourceId": "QuizWebApplication",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\ASUS-PRO\\source\\repos\\Quiz-based Learning App\\QuizWebApplication\\wwwroot\\",
+      "ContentRoot": "E:\\PRN222\\Group Project\\Quiz-based-Learning-App\\QuizWebApplication\\wwwroot\\",
       "BasePath": "_content/QuizWebApplication",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap-utilities.rtl.min.css",
       "AssetKind": "All",
@@ -701,10 +834,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.min.css"
     },
     {
-      "Identity": "C:\\Users\\ASUS-PRO\\source\\repos\\Quiz-based Learning App\\QuizWebApplication\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.min.css.map",
+      "Identity": "E:\\PRN222\\Group Project\\Quiz-based-Learning-App\\QuizWebApplication\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.min.css.map",
       "SourceId": "QuizWebApplication",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\ASUS-PRO\\source\\repos\\Quiz-based Learning App\\QuizWebApplication\\wwwroot\\",
+      "ContentRoot": "E:\\PRN222\\Group Project\\Quiz-based-Learning-App\\QuizWebApplication\\wwwroot\\",
       "BasePath": "_content/QuizWebApplication",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap-utilities.rtl.min.css.map",
       "AssetKind": "All",
@@ -720,10 +853,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.min.css.map"
     },
     {
-      "Identity": "C:\\Users\\ASUS-PRO\\source\\repos\\Quiz-based Learning App\\QuizWebApplication\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.js",
+      "Identity": "E:\\PRN222\\Group Project\\Quiz-based-Learning-App\\QuizWebApplication\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.js",
       "SourceId": "QuizWebApplication",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\ASUS-PRO\\source\\repos\\Quiz-based Learning App\\QuizWebApplication\\wwwroot\\",
+      "ContentRoot": "E:\\PRN222\\Group Project\\Quiz-based-Learning-App\\QuizWebApplication\\wwwroot\\",
       "BasePath": "_content/QuizWebApplication",
       "RelativePath": "lib/bootstrap/dist/js/bootstrap.bundle.js",
       "AssetKind": "All",
@@ -739,10 +872,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.js"
     },
     {
-      "Identity": "C:\\Users\\ASUS-PRO\\source\\repos\\Quiz-based Learning App\\QuizWebApplication\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.js.map",
+      "Identity": "E:\\PRN222\\Group Project\\Quiz-based-Learning-App\\QuizWebApplication\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.js.map",
       "SourceId": "QuizWebApplication",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\ASUS-PRO\\source\\repos\\Quiz-based Learning App\\QuizWebApplication\\wwwroot\\",
+      "ContentRoot": "E:\\PRN222\\Group Project\\Quiz-based-Learning-App\\QuizWebApplication\\wwwroot\\",
       "BasePath": "_content/QuizWebApplication",
       "RelativePath": "lib/bootstrap/dist/js/bootstrap.bundle.js.map",
       "AssetKind": "All",
@@ -758,10 +891,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.js.map"
     },
     {
-      "Identity": "C:\\Users\\ASUS-PRO\\source\\repos\\Quiz-based Learning App\\QuizWebApplication\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.min.js",
+      "Identity": "E:\\PRN222\\Group Project\\Quiz-based-Learning-App\\QuizWebApplication\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.min.js",
       "SourceId": "QuizWebApplication",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\ASUS-PRO\\source\\repos\\Quiz-based Learning App\\QuizWebApplication\\wwwroot\\",
+      "ContentRoot": "E:\\PRN222\\Group Project\\Quiz-based-Learning-App\\QuizWebApplication\\wwwroot\\",
       "BasePath": "_content/QuizWebApplication",
       "RelativePath": "lib/bootstrap/dist/js/bootstrap.bundle.min.js",
       "AssetKind": "All",
@@ -777,10 +910,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.min.js"
     },
     {
-      "Identity": "C:\\Users\\ASUS-PRO\\source\\repos\\Quiz-based Learning App\\QuizWebApplication\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.min.js.map",
+      "Identity": "E:\\PRN222\\Group Project\\Quiz-based-Learning-App\\QuizWebApplication\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.min.js.map",
       "SourceId": "QuizWebApplication",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\ASUS-PRO\\source\\repos\\Quiz-based Learning App\\QuizWebApplication\\wwwroot\\",
+      "ContentRoot": "E:\\PRN222\\Group Project\\Quiz-based-Learning-App\\QuizWebApplication\\wwwroot\\",
       "BasePath": "_content/QuizWebApplication",
       "RelativePath": "lib/bootstrap/dist/js/bootstrap.bundle.min.js.map",
       "AssetKind": "All",
@@ -796,10 +929,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.min.js.map"
     },
     {
-      "Identity": "C:\\Users\\ASUS-PRO\\source\\repos\\Quiz-based Learning App\\QuizWebApplication\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.js",
+      "Identity": "E:\\PRN222\\Group Project\\Quiz-based-Learning-App\\QuizWebApplication\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.js",
       "SourceId": "QuizWebApplication",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\ASUS-PRO\\source\\repos\\Quiz-based Learning App\\QuizWebApplication\\wwwroot\\",
+      "ContentRoot": "E:\\PRN222\\Group Project\\Quiz-based-Learning-App\\QuizWebApplication\\wwwroot\\",
       "BasePath": "_content/QuizWebApplication",
       "RelativePath": "lib/bootstrap/dist/js/bootstrap.esm.js",
       "AssetKind": "All",
@@ -815,10 +948,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.js"
     },
     {
-      "Identity": "C:\\Users\\ASUS-PRO\\source\\repos\\Quiz-based Learning App\\QuizWebApplication\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.js.map",
+      "Identity": "E:\\PRN222\\Group Project\\Quiz-based-Learning-App\\QuizWebApplication\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.js.map",
       "SourceId": "QuizWebApplication",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\ASUS-PRO\\source\\repos\\Quiz-based Learning App\\QuizWebApplication\\wwwroot\\",
+      "ContentRoot": "E:\\PRN222\\Group Project\\Quiz-based-Learning-App\\QuizWebApplication\\wwwroot\\",
       "BasePath": "_content/QuizWebApplication",
       "RelativePath": "lib/bootstrap/dist/js/bootstrap.esm.js.map",
       "AssetKind": "All",
@@ -834,10 +967,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.js.map"
     },
     {
-      "Identity": "C:\\Users\\ASUS-PRO\\source\\repos\\Quiz-based Learning App\\QuizWebApplication\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.min.js",
+      "Identity": "E:\\PRN222\\Group Project\\Quiz-based-Learning-App\\QuizWebApplication\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.min.js",
       "SourceId": "QuizWebApplication",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\ASUS-PRO\\source\\repos\\Quiz-based Learning App\\QuizWebApplication\\wwwroot\\",
+      "ContentRoot": "E:\\PRN222\\Group Project\\Quiz-based-Learning-App\\QuizWebApplication\\wwwroot\\",
       "BasePath": "_content/QuizWebApplication",
       "RelativePath": "lib/bootstrap/dist/js/bootstrap.esm.min.js",
       "AssetKind": "All",
@@ -853,10 +986,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.min.js"
     },
     {
-      "Identity": "C:\\Users\\ASUS-PRO\\source\\repos\\Quiz-based Learning App\\QuizWebApplication\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.min.js.map",
+      "Identity": "E:\\PRN222\\Group Project\\Quiz-based-Learning-App\\QuizWebApplication\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.min.js.map",
       "SourceId": "QuizWebApplication",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\ASUS-PRO\\source\\repos\\Quiz-based Learning App\\QuizWebApplication\\wwwroot\\",
+      "ContentRoot": "E:\\PRN222\\Group Project\\Quiz-based-Learning-App\\QuizWebApplication\\wwwroot\\",
       "BasePath": "_content/QuizWebApplication",
       "RelativePath": "lib/bootstrap/dist/js/bootstrap.esm.min.js.map",
       "AssetKind": "All",
@@ -872,10 +1005,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.min.js.map"
     },
     {
-      "Identity": "C:\\Users\\ASUS-PRO\\source\\repos\\Quiz-based Learning App\\QuizWebApplication\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.js",
+      "Identity": "E:\\PRN222\\Group Project\\Quiz-based-Learning-App\\QuizWebApplication\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.js",
       "SourceId": "QuizWebApplication",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\ASUS-PRO\\source\\repos\\Quiz-based Learning App\\QuizWebApplication\\wwwroot\\",
+      "ContentRoot": "E:\\PRN222\\Group Project\\Quiz-based-Learning-App\\QuizWebApplication\\wwwroot\\",
       "BasePath": "_content/QuizWebApplication",
       "RelativePath": "lib/bootstrap/dist/js/bootstrap.js",
       "AssetKind": "All",
@@ -891,10 +1024,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.js"
     },
     {
-      "Identity": "C:\\Users\\ASUS-PRO\\source\\repos\\Quiz-based Learning App\\QuizWebApplication\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.js.map",
+      "Identity": "E:\\PRN222\\Group Project\\Quiz-based-Learning-App\\QuizWebApplication\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.js.map",
       "SourceId": "QuizWebApplication",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\ASUS-PRO\\source\\repos\\Quiz-based Learning App\\QuizWebApplication\\wwwroot\\",
+      "ContentRoot": "E:\\PRN222\\Group Project\\Quiz-based-Learning-App\\QuizWebApplication\\wwwroot\\",
       "BasePath": "_content/QuizWebApplication",
       "RelativePath": "lib/bootstrap/dist/js/bootstrap.js.map",
       "AssetKind": "All",
@@ -910,10 +1043,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.js.map"
     },
     {
-      "Identity": "C:\\Users\\ASUS-PRO\\source\\repos\\Quiz-based Learning App\\QuizWebApplication\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.min.js",
+      "Identity": "E:\\PRN222\\Group Project\\Quiz-based-Learning-App\\QuizWebApplication\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.min.js",
       "SourceId": "QuizWebApplication",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\ASUS-PRO\\source\\repos\\Quiz-based Learning App\\QuizWebApplication\\wwwroot\\",
+      "ContentRoot": "E:\\PRN222\\Group Project\\Quiz-based-Learning-App\\QuizWebApplication\\wwwroot\\",
       "BasePath": "_content/QuizWebApplication",
       "RelativePath": "lib/bootstrap/dist/js/bootstrap.min.js",
       "AssetKind": "All",
@@ -929,10 +1062,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.min.js"
     },
     {
-      "Identity": "C:\\Users\\ASUS-PRO\\source\\repos\\Quiz-based Learning App\\QuizWebApplication\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.min.js.map",
+      "Identity": "E:\\PRN222\\Group Project\\Quiz-based-Learning-App\\QuizWebApplication\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.min.js.map",
       "SourceId": "QuizWebApplication",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\ASUS-PRO\\source\\repos\\Quiz-based Learning App\\QuizWebApplication\\wwwroot\\",
+      "ContentRoot": "E:\\PRN222\\Group Project\\Quiz-based-Learning-App\\QuizWebApplication\\wwwroot\\",
       "BasePath": "_content/QuizWebApplication",
       "RelativePath": "lib/bootstrap/dist/js/bootstrap.min.js.map",
       "AssetKind": "All",
@@ -948,10 +1081,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.min.js.map"
     },
     {
-      "Identity": "C:\\Users\\ASUS-PRO\\source\\repos\\Quiz-based Learning App\\QuizWebApplication\\wwwroot\\lib\\bootstrap\\LICENSE",
+      "Identity": "E:\\PRN222\\Group Project\\Quiz-based-Learning-App\\QuizWebApplication\\wwwroot\\lib\\bootstrap\\LICENSE",
       "SourceId": "QuizWebApplication",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\ASUS-PRO\\source\\repos\\Quiz-based Learning App\\QuizWebApplication\\wwwroot\\",
+      "ContentRoot": "E:\\PRN222\\Group Project\\Quiz-based-Learning-App\\QuizWebApplication\\wwwroot\\",
       "BasePath": "_content/QuizWebApplication",
       "RelativePath": "lib/bootstrap/LICENSE",
       "AssetKind": "All",
@@ -967,10 +1100,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\LICENSE"
     },
     {
-      "Identity": "C:\\Users\\ASUS-PRO\\source\\repos\\Quiz-based Learning App\\QuizWebApplication\\wwwroot\\lib\\jquery\\dist\\jquery.js",
+      "Identity": "E:\\PRN222\\Group Project\\Quiz-based-Learning-App\\QuizWebApplication\\wwwroot\\lib\\jquery\\dist\\jquery.js",
       "SourceId": "QuizWebApplication",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\ASUS-PRO\\source\\repos\\Quiz-based Learning App\\QuizWebApplication\\wwwroot\\",
+      "ContentRoot": "E:\\PRN222\\Group Project\\Quiz-based-Learning-App\\QuizWebApplication\\wwwroot\\",
       "BasePath": "_content/QuizWebApplication",
       "RelativePath": "lib/jquery/dist/jquery.js",
       "AssetKind": "All",
@@ -986,10 +1119,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\jquery\\dist\\jquery.js"
     },
     {
-      "Identity": "C:\\Users\\ASUS-PRO\\source\\repos\\Quiz-based Learning App\\QuizWebApplication\\wwwroot\\lib\\jquery\\dist\\jquery.min.js",
+      "Identity": "E:\\PRN222\\Group Project\\Quiz-based-Learning-App\\QuizWebApplication\\wwwroot\\lib\\jquery\\dist\\jquery.min.js",
       "SourceId": "QuizWebApplication",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\ASUS-PRO\\source\\repos\\Quiz-based Learning App\\QuizWebApplication\\wwwroot\\",
+      "ContentRoot": "E:\\PRN222\\Group Project\\Quiz-based-Learning-App\\QuizWebApplication\\wwwroot\\",
       "BasePath": "_content/QuizWebApplication",
       "RelativePath": "lib/jquery/dist/jquery.min.js",
       "AssetKind": "All",
@@ -1005,10 +1138,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\jquery\\dist\\jquery.min.js"
     },
     {
-      "Identity": "C:\\Users\\ASUS-PRO\\source\\repos\\Quiz-based Learning App\\QuizWebApplication\\wwwroot\\lib\\jquery\\dist\\jquery.min.map",
+      "Identity": "E:\\PRN222\\Group Project\\Quiz-based-Learning-App\\QuizWebApplication\\wwwroot\\lib\\jquery\\dist\\jquery.min.map",
       "SourceId": "QuizWebApplication",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\ASUS-PRO\\source\\repos\\Quiz-based Learning App\\QuizWebApplication\\wwwroot\\",
+      "ContentRoot": "E:\\PRN222\\Group Project\\Quiz-based-Learning-App\\QuizWebApplication\\wwwroot\\",
       "BasePath": "_content/QuizWebApplication",
       "RelativePath": "lib/jquery/dist/jquery.min.map",
       "AssetKind": "All",
@@ -1024,10 +1157,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\jquery\\dist\\jquery.min.map"
     },
     {
-      "Identity": "C:\\Users\\ASUS-PRO\\source\\repos\\Quiz-based Learning App\\QuizWebApplication\\wwwroot\\lib\\jquery\\LICENSE.txt",
+      "Identity": "E:\\PRN222\\Group Project\\Quiz-based-Learning-App\\QuizWebApplication\\wwwroot\\lib\\jquery\\LICENSE.txt",
       "SourceId": "QuizWebApplication",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\ASUS-PRO\\source\\repos\\Quiz-based Learning App\\QuizWebApplication\\wwwroot\\",
+      "ContentRoot": "E:\\PRN222\\Group Project\\Quiz-based-Learning-App\\QuizWebApplication\\wwwroot\\",
       "BasePath": "_content/QuizWebApplication",
       "RelativePath": "lib/jquery/LICENSE.txt",
       "AssetKind": "All",
@@ -1043,10 +1176,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\jquery\\LICENSE.txt"
     },
     {
-      "Identity": "C:\\Users\\ASUS-PRO\\source\\repos\\Quiz-based Learning App\\QuizWebApplication\\wwwroot\\lib\\jquery-validation\\dist\\additional-methods.js",
+      "Identity": "E:\\PRN222\\Group Project\\Quiz-based-Learning-App\\QuizWebApplication\\wwwroot\\lib\\jquery-validation\\dist\\additional-methods.js",
       "SourceId": "QuizWebApplication",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\ASUS-PRO\\source\\repos\\Quiz-based Learning App\\QuizWebApplication\\wwwroot\\",
+      "ContentRoot": "E:\\PRN222\\Group Project\\Quiz-based-Learning-App\\QuizWebApplication\\wwwroot\\",
       "BasePath": "_content/QuizWebApplication",
       "RelativePath": "lib/jquery-validation/dist/additional-methods.js",
       "AssetKind": "All",
@@ -1062,10 +1195,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\jquery-validation\\dist\\additional-methods.js"
     },
     {
-      "Identity": "C:\\Users\\ASUS-PRO\\source\\repos\\Quiz-based Learning App\\QuizWebApplication\\wwwroot\\lib\\jquery-validation\\dist\\additional-methods.min.js",
+      "Identity": "E:\\PRN222\\Group Project\\Quiz-based-Learning-App\\QuizWebApplication\\wwwroot\\lib\\jquery-validation\\dist\\additional-methods.min.js",
       "SourceId": "QuizWebApplication",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\ASUS-PRO\\source\\repos\\Quiz-based Learning App\\QuizWebApplication\\wwwroot\\",
+      "ContentRoot": "E:\\PRN222\\Group Project\\Quiz-based-Learning-App\\QuizWebApplication\\wwwroot\\",
       "BasePath": "_content/QuizWebApplication",
       "RelativePath": "lib/jquery-validation/dist/additional-methods.min.js",
       "AssetKind": "All",
@@ -1081,10 +1214,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\jquery-validation\\dist\\additional-methods.min.js"
     },
     {
-      "Identity": "C:\\Users\\ASUS-PRO\\source\\repos\\Quiz-based Learning App\\QuizWebApplication\\wwwroot\\lib\\jquery-validation\\dist\\jquery.validate.js",
+      "Identity": "E:\\PRN222\\Group Project\\Quiz-based-Learning-App\\QuizWebApplication\\wwwroot\\lib\\jquery-validation\\dist\\jquery.validate.js",
       "SourceId": "QuizWebApplication",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\ASUS-PRO\\source\\repos\\Quiz-based Learning App\\QuizWebApplication\\wwwroot\\",
+      "ContentRoot": "E:\\PRN222\\Group Project\\Quiz-based-Learning-App\\QuizWebApplication\\wwwroot\\",
       "BasePath": "_content/QuizWebApplication",
       "RelativePath": "lib/jquery-validation/dist/jquery.validate.js",
       "AssetKind": "All",
@@ -1100,10 +1233,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\jquery-validation\\dist\\jquery.validate.js"
     },
     {
-      "Identity": "C:\\Users\\ASUS-PRO\\source\\repos\\Quiz-based Learning App\\QuizWebApplication\\wwwroot\\lib\\jquery-validation\\dist\\jquery.validate.min.js",
+      "Identity": "E:\\PRN222\\Group Project\\Quiz-based-Learning-App\\QuizWebApplication\\wwwroot\\lib\\jquery-validation\\dist\\jquery.validate.min.js",
       "SourceId": "QuizWebApplication",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\ASUS-PRO\\source\\repos\\Quiz-based Learning App\\QuizWebApplication\\wwwroot\\",
+      "ContentRoot": "E:\\PRN222\\Group Project\\Quiz-based-Learning-App\\QuizWebApplication\\wwwroot\\",
       "BasePath": "_content/QuizWebApplication",
       "RelativePath": "lib/jquery-validation/dist/jquery.validate.min.js",
       "AssetKind": "All",
@@ -1119,10 +1252,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\jquery-validation\\dist\\jquery.validate.min.js"
     },
     {
-      "Identity": "C:\\Users\\ASUS-PRO\\source\\repos\\Quiz-based Learning App\\QuizWebApplication\\wwwroot\\lib\\jquery-validation\\LICENSE.md",
+      "Identity": "E:\\PRN222\\Group Project\\Quiz-based-Learning-App\\QuizWebApplication\\wwwroot\\lib\\jquery-validation\\LICENSE.md",
       "SourceId": "QuizWebApplication",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\ASUS-PRO\\source\\repos\\Quiz-based Learning App\\QuizWebApplication\\wwwroot\\",
+      "ContentRoot": "E:\\PRN222\\Group Project\\Quiz-based-Learning-App\\QuizWebApplication\\wwwroot\\",
       "BasePath": "_content/QuizWebApplication",
       "RelativePath": "lib/jquery-validation/LICENSE.md",
       "AssetKind": "All",
@@ -1138,10 +1271,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\jquery-validation\\LICENSE.md"
     },
     {
-      "Identity": "C:\\Users\\ASUS-PRO\\source\\repos\\Quiz-based Learning App\\QuizWebApplication\\wwwroot\\lib\\jquery-validation-unobtrusive\\jquery.validate.unobtrusive.js",
+      "Identity": "E:\\PRN222\\Group Project\\Quiz-based-Learning-App\\QuizWebApplication\\wwwroot\\lib\\jquery-validation-unobtrusive\\jquery.validate.unobtrusive.js",
       "SourceId": "QuizWebApplication",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\ASUS-PRO\\source\\repos\\Quiz-based Learning App\\QuizWebApplication\\wwwroot\\",
+      "ContentRoot": "E:\\PRN222\\Group Project\\Quiz-based-Learning-App\\QuizWebApplication\\wwwroot\\",
       "BasePath": "_content/QuizWebApplication",
       "RelativePath": "lib/jquery-validation-unobtrusive/jquery.validate.unobtrusive.js",
       "AssetKind": "All",
@@ -1157,10 +1290,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\jquery-validation-unobtrusive\\jquery.validate.unobtrusive.js"
     },
     {
-      "Identity": "C:\\Users\\ASUS-PRO\\source\\repos\\Quiz-based Learning App\\QuizWebApplication\\wwwroot\\lib\\jquery-validation-unobtrusive\\jquery.validate.unobtrusive.min.js",
+      "Identity": "E:\\PRN222\\Group Project\\Quiz-based-Learning-App\\QuizWebApplication\\wwwroot\\lib\\jquery-validation-unobtrusive\\jquery.validate.unobtrusive.min.js",
       "SourceId": "QuizWebApplication",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\ASUS-PRO\\source\\repos\\Quiz-based Learning App\\QuizWebApplication\\wwwroot\\",
+      "ContentRoot": "E:\\PRN222\\Group Project\\Quiz-based-Learning-App\\QuizWebApplication\\wwwroot\\",
       "BasePath": "_content/QuizWebApplication",
       "RelativePath": "lib/jquery-validation-unobtrusive/jquery.validate.unobtrusive.min.js",
       "AssetKind": "All",
@@ -1176,10 +1309,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\jquery-validation-unobtrusive\\jquery.validate.unobtrusive.min.js"
     },
     {
-      "Identity": "C:\\Users\\ASUS-PRO\\source\\repos\\Quiz-based Learning App\\QuizWebApplication\\wwwroot\\lib\\jquery-validation-unobtrusive\\LICENSE.txt",
+      "Identity": "E:\\PRN222\\Group Project\\Quiz-based-Learning-App\\QuizWebApplication\\wwwroot\\lib\\jquery-validation-unobtrusive\\LICENSE.txt",
       "SourceId": "QuizWebApplication",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\ASUS-PRO\\source\\repos\\Quiz-based Learning App\\QuizWebApplication\\wwwroot\\",
+      "ContentRoot": "E:\\PRN222\\Group Project\\Quiz-based-Learning-App\\QuizWebApplication\\wwwroot\\",
       "BasePath": "_content/QuizWebApplication",
       "RelativePath": "lib/jquery-validation-unobtrusive/LICENSE.txt",
       "AssetKind": "All",
@@ -1193,6 +1326,63 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\lib\\jquery-validation-unobtrusive\\LICENSE.txt"
+    },
+    {
+      "Identity": "E:\\PRN222\\Group Project\\Quiz-based-Learning-App\\QuizWebApplication\\wwwroot\\lib\\signalr\\dist\\browser\\signalr.js",
+      "SourceId": "QuizWebApplication",
+      "SourceType": "Discovered",
+      "ContentRoot": "E:\\PRN222\\Group Project\\Quiz-based-Learning-App\\QuizWebApplication\\wwwroot\\",
+      "BasePath": "_content/QuizWebApplication",
+      "RelativePath": "lib/signalr/dist/browser/signalr.js",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "PreferTarget",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\lib\\signalr\\dist\\browser\\signalr.js"
+    },
+    {
+      "Identity": "E:\\PRN222\\Group Project\\Quiz-based-Learning-App\\QuizWebApplication\\wwwroot\\lib\\signalr\\dist\\browser\\signalr.min.js",
+      "SourceId": "QuizWebApplication",
+      "SourceType": "Discovered",
+      "ContentRoot": "E:\\PRN222\\Group Project\\Quiz-based-Learning-App\\QuizWebApplication\\wwwroot\\",
+      "BasePath": "_content/QuizWebApplication",
+      "RelativePath": "lib/signalr/dist/browser/signalr.min.js",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "PreferTarget",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\lib\\signalr\\dist\\browser\\signalr.min.js"
+    },
+    {
+      "Identity": "E:\\PRN222\\Group Project\\Quiz-based-Learning-App\\QuizWebApplication\\wwwroot\\sounds\\lobby.mp3",
+      "SourceId": "QuizWebApplication",
+      "SourceType": "Discovered",
+      "ContentRoot": "E:\\PRN222\\Group Project\\Quiz-based-Learning-App\\QuizWebApplication\\wwwroot\\",
+      "BasePath": "_content/QuizWebApplication",
+      "RelativePath": "sounds/lobby.mp3",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "PreferTarget",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\sounds\\lobby.mp3"
     }
   ]
 }

@@ -18,12 +18,40 @@ build_property.GenerateRazorMetadataSourceChecksumAttributes =
 build_property.MSBuildProjectDirectory = C:\Users\ASUS-PRO\source\repos\Quiz-based Learning App\QuizWebApplication
 build_property._RazorSourceGeneratorDebug = 
 
+[C:/Users/ASUS-PRO/source/repos/Quiz-based Learning App/QuizWebApplication/Views/Account/Login.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWNjb3VudFxMb2dpbi5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/ASUS-PRO/source/repos/Quiz-based Learning App/QuizWebApplication/Views/Account/Register.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWNjb3VudFxSZWdpc3Rlci5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/ASUS-PRO/source/repos/Quiz-based Learning App/QuizWebApplication/Views/Game/Game.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcR2FtZVxHYW1lLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/ASUS-PRO/source/repos/Quiz-based Learning App/QuizWebApplication/Views/Game/Join.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcR2FtZVxKb2luLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/ASUS-PRO/source/repos/Quiz-based Learning App/QuizWebApplication/Views/Game/Lobby.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcR2FtZVxMb2JieS5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/ASUS-PRO/source/repos/Quiz-based Learning App/QuizWebApplication/Views/Game/MyQuizzes.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcR2FtZVxNeVF1aXp6ZXMuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
 [C:/Users/ASUS-PRO/source/repos/Quiz-based Learning App/QuizWebApplication/Views/Home/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxJbmRleC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
 [C:/Users/ASUS-PRO/source/repos/Quiz-based Learning App/QuizWebApplication/Views/Home/Privacy.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxQcml2YWN5LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/ASUS-PRO/source/repos/Quiz-based Learning App/QuizWebApplication/Views/Quiz/Create.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUXVpelxDcmVhdGUuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
 [C:/Users/ASUS-PRO/source/repos/Quiz-based Learning App/QuizWebApplication/Views/Shared/Error.cshtml]

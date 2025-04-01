@@ -202,7 +202,11 @@
         "frameworks": {
           "net8.0": {
             "targetAlias": "net8.0",
-            "projectReferences": {}
+            "projectReferences": {
+              "C:\\Users\\ASUS-PRO\\source\\repos\\Quiz-based Learning App\\DataAccess\\DataAccess.csproj": {
+                "projectPath": "C:\\Users\\ASUS-PRO\\source\\repos\\Quiz-based Learning App\\DataAccess\\DataAccess.csproj"
+              }
+            }
           }
         },
         "warningProperties": {

@@ -1,0 +1,94 @@
+﻿@model DataAccess.Models.Quiz;
+@{
+    ViewData["Title"] = "Lobby";
+    var gamePin = ViewBag.GamePin;
+    var isHost = ViewBag.IsHost;
+    var connectionId = ViewBag.ConnectionId;
+    Layout = null;
+}
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lobby - QuizPulse</title>
+    <link rel="stylesheet" href="~/css/lobby.css">
+</head>
+<body>
+    <div class="lobby-container">
+        <div class="lobby-header">
+            <div class="game-pin">@gamePin</div>
+        </div>
+
+        @if (!isHost)
+        {
+            <p class="waiting-message">Waiting for host to start...</p>
+        }
+
+        <div class="player-list" id="playerList"></div>
+
+        @if (isHost)
+        {
+            <button id="startGameButton" >Start Game</button>
+        }
+        <img src="~/imgs/player.png" alt="Avatar">
+    </div>
+
+    <script src="~/lib/signalr/dist/browser/signalr.js"></script>
+    <script src="~/lib/signalr/dist/browser/signalr.min.js"></script>
+    <script src="~/js/signalr-client.js"></script>
+    <script>
+        const playerImagePath = "@Url.Content("~/imgs/player.png")";
+        const gamePin = "@gamePin";
+        const userId = "@User.FindFirst(System.Security.Claims.ClaimTypes.NameIdentifier)?.Value";
+        const isHost = @isHost.ToString().ToLower();
+        let connectionId = "@connectionId";
+        const quizId = @Model.Id;
+        
+        connection.start()
+            .then(() => {
+                connection.invoke("UpdateConnection", gamePin, userId, connectionId)
+            })
+            .catch(err => console.error("SignalR Connection Error: ", err));
+
+        connection.on("UpdatePlayerList", (players) => {
+            console.log('UpdatePlayerList', players);
+            const playerList = document.getElementById("playerList");
+            playerList.innerHTML = players.map(p => `
+                                        <div class="player-card" ${isHost ? `onclick="removePlayer('${p.connectionId}')"` : ""} style="cursor: pointer">
+                                       <img src="${playerImagePath}" alt="Avatar"
+                                                    >
+                                    ${p.playerName}
+                                
+                        </div>
+                    `).join("");
+        });
+        connection.on("KickedFromGame", (message) => {
+            alert(message);
+            window.location.assign('/Game/Join');
+        });
+        connection.on("UpdateConnectionIdSuccess", (id) => {
+            connectionId = id;
+        });
+        connection.on("StartGame", () => {
+            console.log(quizId, gamePin, connectionId);
+            window.location.assign(`/Game/Game?quizId=${quizId}&gamePin=${gamePin}&connectionId=${connectionId}`);
+        });
+
+        if (isHost) {    
+            document.getElementById("startGameButton").addEventListener("click", () => {
+                connection.invoke("StartGame", gamePin)     
+            });
+        }
+
+        // Hàm loại player dựa trên connectionId
+        function removePlayer(connectionId) {
+            if (isHost && connection.state === signalR.HubConnectionState.Connected) {
+                connection.invoke("RemovePlayer", gamePin, connectionId)
+                    .catch(err => console.error("RemovePlayer Error:", err));
+            }
+        }
+    </script>
+</body>
+</html>

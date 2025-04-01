@@ -14,6 +14,7 @@ namespace QuizWebApplication.Controllers
             _logger = logger;
         }
 
+        [Authorize]
         public IActionResult Index()
         {
             return View();
