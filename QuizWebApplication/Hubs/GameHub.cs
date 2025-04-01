@@ -14,7 +14,21 @@ namespace QuizWebApplication.Hubs
             _gameManager = gameManager;
             _questionService = questionService;
         }
-
+        public override async Task OnDisconnectedAsync(Exception exception)
+        {
+            var games = _gameManager.GetActiveGames();
+            foreach (var game in games)
+            {
+                var player = game.Value.Players.FirstOrDefault(p => p.ConnectionId == Context.ConnectionId);
+                if (player != null)
+                {
+                    game.Value.Players.Remove(player);
+                    await Groups.RemoveFromGroupAsync(Context.ConnectionId, game.Value.GamePin);
+                    await Clients.Client(game.Value.HostConnectionId).SendAsync("UpdatePlayerList", game.Value.Players);
+                }
+            }
+            await base.OnDisconnectedAsync(exception);
+        }
         public async Task<string> CreateGame(int quizId, string hostId = "")
         {
 
@@ -42,7 +56,7 @@ namespace QuizWebApplication.Hubs
             var connectionId = Context.ConnectionId;
             await Clients.Caller.SendAsync("OnGetConnectionId", connectionId);
         }
-        public async Task JoinGame(string gamePin, string playerName)
+        public async Task JoinGame(string gamePin, string playerName, bool isCorrectAgain = false)
         {
             // Kiểm tra gamePin có tồn tại không
             var game = _gameManager.GetGame(gamePin);
@@ -52,7 +66,7 @@ namespace QuizWebApplication.Hubs
                 await Clients.Caller.SendAsync("JoinFailed", "Invalid Game PIN.");
                 return;
             }
-            if (game.IsStarted)
+            if (game.IsStarted && !isCorrectAgain)
             {
                 await Clients.Caller.SendAsync("JoinFailed", "The game has begun.");
                 return;
@@ -74,7 +88,7 @@ namespace QuizWebApplication.Hubs
             await Groups.AddToGroupAsync(newPlayer.ConnectionId, gamePin);
             _gameManager.AddPlayer(gamePin, newPlayer);
             // Gửi thông báo thành công cho caller
-            await Clients.Caller.SendAsync("JoinSuccess", gamePin, game.QuizId, playerConnectionId);
+            await Clients.Caller.SendAsync("JoinSuccess", gamePin, game.QuizId, playerConnectionId, newPlayer.PlayerName);
             //await Clients.All.SendAsync("UpdatePlayerList", updatedPlayers);
         }
 
@@ -244,6 +258,16 @@ namespace QuizWebApplication.Hubs
 
             _gameManager.RemoveGame(gamePin);
         }
+        public async Task SendPlayerList(string gamePin)
+        {
+            var game = _gameManager.GetGame(gamePin);
+            if (game == null)
+            {
+                await Clients.Caller.SendAsync("SendFailed", "Invalid Game PIN.");
+                return;
+            }
+            await Clients.Client(game.HostConnectionId).SendAsync("UpdatePlayerList", game.Players);
+        }
         public async Task UpdateConnection(string gamePin, string userId = "", string connectionId = "")
         {
             var game = _gameManager.GetGame(gamePin);
@@ -257,8 +281,10 @@ namespace QuizWebApplication.Hubs
             if (!string.IsNullOrEmpty(userId) && game.HostId == userId)
             {
                 game.HostConnectionId = newConnectionId;
+                await Groups.AddToGroupAsync(newConnectionId, gamePin);
+                await Clients.Caller.SendAsync("ConnectionUpdated", "Connection updated successfully");
             }
-            else
+            /*else
             {
                 var player = _gameManager.GetPlayer(gamePin, connectionId);
                 if (player == null) return;
@@ -270,7 +296,7 @@ namespace QuizWebApplication.Hubs
 
             }
             await Groups.AddToGroupAsync(newConnectionId, gamePin);
-            await Clients.Caller.SendAsync("ConnectionUpdated", "Connection updated successfully");
+            await Clients.Caller.SendAsync("ConnectionUpdated", "Connection updated successfully");*/
         }
 
         public async Task GetCurrentQuestion(string gamePin)

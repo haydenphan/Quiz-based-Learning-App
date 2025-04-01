@@ -12,3 +12,18 @@ C:\Users\ASUS-PRO\source\repos\Quiz-based Learning App\DataAccess\obj\Debug\net8
 C:\Users\ASUS-PRO\source\repos\Quiz-based Learning App\DataAccess\obj\Debug\net8.0\DataAccess.pdb
 C:\Users\ASUS-PRO\source\repos\Quiz-based Learning App\DataAccess\obj\Debug\net8.0\DataAccess.genruntimeconfig.cache
 C:\Users\ASUS-PRO\source\repos\Quiz-based Learning App\DataAccess\obj\Debug\net8.0\ref\DataAccess.dll
+E:\PRN222\Group Project\Quiz-based-Learning-App\DataAccess\bin\Debug\net8.0\DataAccess.deps.json
+E:\PRN222\Group Project\Quiz-based-Learning-App\DataAccess\bin\Debug\net8.0\DataAccess.runtimeconfig.json
+E:\PRN222\Group Project\Quiz-based-Learning-App\DataAccess\bin\Debug\net8.0\DataAccess.dll
+E:\PRN222\Group Project\Quiz-based-Learning-App\DataAccess\bin\Debug\net8.0\DataAccess.pdb
+E:\PRN222\Group Project\Quiz-based-Learning-App\DataAccess\obj\Debug\net8.0\DataAccess.csproj.AssemblyReference.cache
+E:\PRN222\Group Project\Quiz-based-Learning-App\DataAccess\obj\Debug\net8.0\DataAccess.GeneratedMSBuildEditorConfig.editorconfig
+E:\PRN222\Group Project\Quiz-based-Learning-App\DataAccess\obj\Debug\net8.0\DataAccess.AssemblyInfoInputs.cache
+E:\PRN222\Group Project\Quiz-based-Learning-App\DataAccess\obj\Debug\net8.0\DataAccess.AssemblyInfo.cs
+E:\PRN222\Group Project\Quiz-based-Learning-App\DataAccess\obj\Debug\net8.0\DataAccess.csproj.CoreCompileInputs.cache
+E:\PRN222\Group Project\Quiz-based-Learning-App\DataAccess\obj\Debug\net8.0\DataAccess.sourcelink.json
+E:\PRN222\Group Project\Quiz-based-Learning-App\DataAccess\obj\Debug\net8.0\DataAccess.dll
+E:\PRN222\Group Project\Quiz-based-Learning-App\DataAccess\obj\Debug\net8.0\refint\DataAccess.dll
+E:\PRN222\Group Project\Quiz-based-Learning-App\DataAccess\obj\Debug\net8.0\DataAccess.pdb
+E:\PRN222\Group Project\Quiz-based-Learning-App\DataAccess\obj\Debug\net8.0\DataAccess.genruntimeconfig.cache
+E:\PRN222\Group Project\Quiz-based-Learning-App\DataAccess\obj\Debug\net8.0\ref\DataAccess.dll

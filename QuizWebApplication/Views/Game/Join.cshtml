@@ -44,11 +44,11 @@
         connection.on("JoinFailed", (message) => {
             showError(message);
         });
-        connection.on("JoinSuccess", (gamePin, quizId, connectionId) => {
+        connection.on("JoinSuccess", (gamePin, quizId, connectionId, playerName) => {
             /*const nickname = document.getElementById("nicknameInput").value.trim();
             localStorage.setItem("nickname", nickname);*/
             console.error('gamePin && quizId: ', gamePin, quizId, connectionId);
-            window.location.assign(`/Game/Lobby?quizId=${quizId}&gamePin=${gamePin}&connectionId=${connectionId}`);
+            window.location.assign(`/Game/Lobby?quizId=${quizId}&gamePin=${gamePin}&connectionId=${connectionId}&playerName=${playerName}`);
         });
         document.getElementById("joinButton").addEventListener("click", () => {
             const gamePin = document.getElementById("gamePinInput").value.trim();
@@ -69,7 +69,7 @@
                 return;
             }
 
-            connection.invoke("JoinGame", gamePin, nickname)
+            connection.invoke("JoinGame", gamePin, nickname, false)
                 .catch(err => console.error("JoinGame Error: ", err));
         });
     </script>

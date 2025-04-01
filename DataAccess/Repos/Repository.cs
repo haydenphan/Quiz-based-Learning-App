@@ -1,21 +1,16 @@
-﻿using Microsoft.EntityFrameworkCore.Infrastructure;
+﻿using DataAccess.Models;
 using Microsoft.EntityFrameworkCore;
-using System;
-using System.Collections.Generic;
-using System.Linq;
+using Microsoft.EntityFrameworkCore.Infrastructure;
 using System.Linq.Expressions;
-using System.Text;
-using System.Threading.Tasks;
-using DataAccess.Models;
 
 namespace DataAccess.Repos
 {
     public class Repository<T> : IRepository<T> where T : BaseDomain
     {
-        protected readonly DbContext _dbContext;
+        protected readonly QuizDbContext _dbContext;
         protected readonly DbSet<T> _table;
         public DatabaseFacade Database => _dbContext.Database;
-        public Repository(DbContext dbContext)
+        public Repository(QuizDbContext dbContext)
         {
             _dbContext = dbContext;
             _table = dbContext.Set<T>();

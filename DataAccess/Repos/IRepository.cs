@@ -1,9 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Linq.Expressions;
-using System.Text;
-using System.Threading.Tasks;
+﻿using System.Linq.Expressions;
 
 namespace DataAccess.Repos
 {
@@ -15,5 +10,6 @@ namespace DataAccess.Repos
         Task<T?> DeleteAsync(T entity);
         Task<T?> UpdateAsync(T entity);
         Task<IEnumerable<T>> FindByConditionAsync(Expression<Func<T, bool>> expression);
+        Task<IEnumerable<T>> FindByConditionAsync(Expression<Func<T, bool>> expression, params Expression<Func<T, object>>[] includes);
     }
 }
