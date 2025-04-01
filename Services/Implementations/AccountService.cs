@@ -87,7 +87,7 @@ namespace Services.Implementations
             {
                 return new RedirectResult(returnUrl);
             }
-            return new RedirectToActionResult("Index", "Home", null);
+            return new RedirectToActionResult("Join", "Game", null);
         }
     }
 }

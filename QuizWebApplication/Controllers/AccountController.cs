@@ -28,7 +28,7 @@ namespace QuizWebApplication.Controllers
                 var result = await _accountService.RegisterAsync(email, password);
                 if (result.Succeeded)
                 {
-                    return RedirectToAction("Index", "Home");
+                    return RedirectToAction("Join", "Game");
                 }
 
                 foreach (var error in result.Errors)
@@ -85,7 +85,7 @@ namespace QuizWebApplication.Controllers
         public async Task<IActionResult> Logout()
         {
             await _accountService.LogoutAsync();
-            return RedirectToAction("Index", "Home");
+            return RedirectToAction("Join", "Game");
         }
 
         private IActionResult RedirectToLocal(string returnUrl)
@@ -94,7 +94,7 @@ namespace QuizWebApplication.Controllers
             {
                 return Redirect(returnUrl);
             }
-            return RedirectToAction("Index", "Home");
+            return RedirectToAction("Join", "Game");
         }
     }
 }

@@ -42,6 +42,17 @@ namespace Services.Implementations
             return quiz;
         }
 
+        public async Task<Quiz> GetByIdAsync(int id)
+        {
+            return await _context.QuizRepository.FindAsync(id);
+        }
+
+        public async Task<List<Quiz>> GetByUserIdAsync(string userId)
+        {
+            return (await _context.QuizRepository.FindByConditionAsync(q => q.UserID == userId,
+                q => q.Questions)).ToList();
+        }
+
         public async Task SaveQuizAsync(Quiz quiz)
         {
             await _context.QuizRepository.AddAsync(quiz);
