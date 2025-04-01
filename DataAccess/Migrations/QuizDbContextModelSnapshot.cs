@@ -24,11 +24,11 @@ namespace DataAccess.Migrations
 
             modelBuilder.Entity("DataAccess.Models.Option", b =>
                 {
-                    b.Property<int>("OptionID")
+                    b.Property<int>("Id")
                         .ValueGeneratedOnAdd()
                         .HasColumnType("int");
 
-                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("OptionID"));
+                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("Id"));
 
                     b.Property<bool>("IsCorrect")
                         .HasColumnType("bit");
@@ -43,7 +43,7 @@ namespace DataAccess.Migrations
                     b.Property<int>("SortOrder")
                         .HasColumnType("int");
 
-                    b.HasKey("OptionID");
+                    b.HasKey("Id");
 
                     b.HasIndex("QuestionID");
 
@@ -52,11 +52,11 @@ namespace DataAccess.Migrations
 
             modelBuilder.Entity("DataAccess.Models.Question", b =>
                 {
-                    b.Property<int>("QuestionID")
+                    b.Property<int>("Id")
                         .ValueGeneratedOnAdd()
                         .HasColumnType("int");
 
-                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("QuestionID"));
+                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("Id"));
 
                     b.Property<string>("QuestionContent")
                         .IsRequired()
@@ -71,7 +71,7 @@ namespace DataAccess.Migrations
                     b.Property<int>("TimeLimitID")
                         .HasColumnType("int");
 
-                    b.HasKey("QuestionID");
+                    b.HasKey("Id");
 
                     b.HasIndex("QuizID");
 
@@ -82,11 +82,11 @@ namespace DataAccess.Migrations
 
             modelBuilder.Entity("DataAccess.Models.Quiz", b =>
                 {
-                    b.Property<int>("QuizID")
+                    b.Property<int>("Id")
                         .ValueGeneratedOnAdd()
                         .HasColumnType("int");
 
-                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("QuizID"));
+                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("Id"));
 
                     b.Property<DateTime>("CreateAt")
                         .HasColumnType("datetime2");
@@ -103,7 +103,7 @@ namespace DataAccess.Migrations
                         .IsRequired()
                         .HasColumnType("nvarchar(450)");
 
-                    b.HasKey("QuizID");
+                    b.HasKey("Id");
 
                     b.HasIndex("UserID");
 
@@ -112,11 +112,11 @@ namespace DataAccess.Migrations
 
             modelBuilder.Entity("DataAccess.Models.TimeLimit", b =>
                 {
-                    b.Property<int>("TimeLimitID")
+                    b.Property<int>("Id")
                         .ValueGeneratedOnAdd()
                         .HasColumnType("int");
 
-                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("TimeLimitID"));
+                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("Id"));
 
                     b.Property<string>("Description")
                         .IsRequired()
@@ -125,7 +125,7 @@ namespace DataAccess.Migrations
                     b.Property<int>("Duration")
                         .HasColumnType("int");
 
-                    b.HasKey("TimeLimitID");
+                    b.HasKey("Id");
 
                     b.ToTable("TimeLimits");
                 });

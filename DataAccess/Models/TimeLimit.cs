@@ -7,11 +7,8 @@ using System.Threading.Tasks;
 
 namespace DataAccess.Models
 {
-    public class TimeLimit
+    public class TimeLimit : BaseDomain
     {
-        [Key]
-        public int TimeLimitID { get; set; }
-
         [Required]
         public string Description { get; set; }
 

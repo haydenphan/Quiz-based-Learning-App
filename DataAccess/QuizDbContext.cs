@@ -1,4 +1,5 @@
 ﻿using DataAccess.Models;
+using DataAccess.Repos;
 using Microsoft.AspNetCore.Identity;
 using Microsoft.AspNetCore.Identity.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore;
@@ -22,17 +23,20 @@ namespace DataAccess
             base.OnModelCreating(modelBuilder);
 
             modelBuilder.Entity<Option>()
+                .HasKey(o => o.Id);
+            modelBuilder.Entity<Option>()
                 .HasOne(o => o.Question)
                 .WithMany(q => q.Options)
                 .HasForeignKey(o => o.QuestionID)
                 .OnDelete(DeleteBehavior.Cascade);
 
             modelBuilder.Entity<Question>()
+                .HasKey(q => q.Id);
+            modelBuilder.Entity<Question>()
                 .HasOne(q => q.Quiz)
                 .WithMany(q => q.Questions)
                 .HasForeignKey(q => q.QuizID)
                 .OnDelete(DeleteBehavior.Cascade);
-
             modelBuilder.Entity<Question>()
                 .HasOne(q => q.TimeLimit)
                 .WithMany(t => t.Questions)
@@ -40,10 +44,24 @@ namespace DataAccess
                 .OnDelete(DeleteBehavior.Cascade);
 
             modelBuilder.Entity<Quiz>()
+                .HasKey(q => q.Id);
+            modelBuilder.Entity<Quiz>()
                 .HasOne(q => q.User)
                 .WithMany()
                 .HasForeignKey(q => q.UserID)
                 .OnDelete(DeleteBehavior.Cascade);
+
+            modelBuilder.Entity<TimeLimit>()
+                .HasKey(t => t.Id);
         }
+
+        #region Repositories registering
+
+        public Repository<Option> OptionRepository => new Repository<Option>(this);
+        public Repository<Question> QuestionRepository => new Repository<Question>(this);
+        public Repository<Quiz> QuizRepository => new Repository<Quiz>(this);
+        public Repository<TimeLimit> TimeLimitRepository => new Repository<TimeLimit>(this);
+
+        #endregion
     }
 }

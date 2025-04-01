@@ -5,6 +5,7 @@
     var gamePin = ViewBag.GamePin;
     var isHost = ViewBag.IsHost;
     var connectionId = ViewBag.ConnectionId;
+    var playerName = ViewBag.PlayerName;
     Layout = null;
 }
 
@@ -42,6 +43,7 @@
         const gamePin = "@gamePin";
         const isHost = @isHost.ToString().ToLower();
         const connectionId = "@connectionId";
+        const playerName = "@playerName";
         let countdownTimer;
         let timeLeft = 0;
         const questionContainer = document.getElementById("questionContainer");
@@ -49,14 +51,29 @@
         const answersContainer = document.getElementById("answers");
         const resultContainer = document.getElementById("resultContainer");
         const countdownElement = document.getElementById("countdown");
-        connection.start()
-            .then(() => {
-                connection.invoke("UpdateConnection", gamePin, userId, connectionId)
-                    .then(() => { connection.invoke("GetCurrentQuestion", gamePin); })
-                    .catch(err => console.error("UpdateConnection Error:", err));
-            })
-            .catch(err => console.error("SignalR Connection Error: ", err));
-
+        if (isHost) {
+            connection.start()
+                .then(() => {
+                    connection.invoke("UpdateConnection", gamePin, userId, connectionId)
+                        .then(() => { connection.invoke("GetCurrentQuestion", gamePin); })
+                        .catch(err => console.error("UpdateConnection Error:", err));
+                })
+                .catch(err => console.error("SignalR Connection Error: ", err));
+        }
+        else {
+            
+            connection.start()
+                .then(() => {
+                    console.log('Join game: ', gamePin, playerName);
+                    connection.invoke("JoinGame", gamePin, playerName, true)
+                        .catch(err => console.error("JoinGame Error: ", err));
+                })
+                .catch(err => console.error("SignalR Connection Error: ", err));
+        }
+        connection.on("JoinSuccess", (gamePin, quizId, connectionId, playerName) => {
+            console.log('JoinSuccess', gamePin)
+            connection.invoke("GetCurrentQuestion", gamePin);
+        });
         connection.on("DisplayQuestion", (question) => {
             console.error('Question: ', question)
             questionContainer.style.display = "block";

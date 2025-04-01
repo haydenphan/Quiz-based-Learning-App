@@ -23,7 +23,7 @@ namespace QuizWebApplication.Controllers
             return View();
         }
         [HttpGet]
-        public async Task<IActionResult> Lobby(int? quizId, string gamePin, string connectionId = "")
+        public async Task<IActionResult> Lobby(int? quizId, string gamePin, string connectionId = "", string playerName = "")
         {
             if (quizId == null || string.IsNullOrEmpty(gamePin))
             {
@@ -43,6 +43,7 @@ namespace QuizWebApplication.Controllers
             var userId = User.FindFirst(ClaimTypes.NameIdentifier)?.Value;
             ViewBag.ConnectionId = connectionId;
             ViewBag.GamePin = gamePin;
+            ViewBag.PlayerName = playerName;
             ViewBag.IsHost = !string.IsNullOrEmpty(userId) && game.HostId == userId;
             return View(quiz);
         }
@@ -58,7 +59,7 @@ namespace QuizWebApplication.Controllers
             return View(quizzes);
         }
         [HttpGet]
-        public async Task<IActionResult> Game(string gamePin, int? quizId, string connectionId)
+        public async Task<IActionResult> Game(string gamePin, int? quizId, string connectionId, string playerName = "")
         {
             if (quizId == null || string.IsNullOrEmpty(gamePin))
             {
@@ -78,6 +79,7 @@ namespace QuizWebApplication.Controllers
             var userId = User.FindFirst(ClaimTypes.NameIdentifier)?.Value;
             ViewBag.QuizId = quizId.Value;
             ViewBag.ConnectionId = connectionId;
+            ViewBag.PlayerName = playerName;
             ViewBag.GamePin = gamePin;
             ViewBag.IsHost = !string.IsNullOrEmpty(userId) && game.HostId == userId;
             return View();

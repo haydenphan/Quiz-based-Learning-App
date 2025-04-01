@@ -4,6 +4,7 @@
     var gamePin = ViewBag.GamePin;
     var isHost = ViewBag.IsHost;
     var connectionId = ViewBag.ConnectionId;
+    var playerName = ViewBag.PlayerName;
     Layout = null;
 }
 
@@ -32,7 +33,6 @@
         {
             <button id="startGameButton" >Start Game</button>
         }
-        <img src="~/imgs/player.png" alt="Avatar">
     </div>
 
     <script src="~/lib/signalr/dist/browser/signalr.js"></script>
@@ -44,13 +44,28 @@
         const userId = "@User.FindFirst(System.Security.Claims.ClaimTypes.NameIdentifier)?.Value";
         const isHost = @isHost.ToString().ToLower();
         let connectionId = "@connectionId";
+        const playerName = "@playerName";
         const quizId = @Model.Id;
         
-        connection.start()
-            .then(() => {
-                connection.invoke("UpdateConnection", gamePin, userId, connectionId)
-            })
-            .catch(err => console.error("SignalR Connection Error: ", err));
+        if (isHost) {
+            connection.start()
+                .then(() => {
+                    connection.invoke("UpdateConnection", gamePin, userId, connectionId)
+                })
+                .catch(err => console.error("SignalR Connection Error: ", err));
+        }
+        else {
+            console.log('Join game');
+            connection.start()
+                .then(() => {
+                    connection.invoke("JoinGame", gamePin, playerName, false)
+                        .catch(err => console.error("JoinGame Error: ", err));
+                })
+                .catch(err => console.error("SignalR Connection Error: ", err));
+        }
+        connection.on("JoinSuccess", (gamePin, quizId, connectionId, playerName) => {
+            connection.invoke("SendPlayerList", gamePin);
+        });
 
         connection.on("UpdatePlayerList", (players) => {
             console.log('UpdatePlayerList', players);
@@ -73,7 +88,7 @@
         });
         connection.on("StartGame", () => {
             console.log(quizId, gamePin, connectionId);
-            window.location.assign(`/Game/Game?quizId=${quizId}&gamePin=${gamePin}&connectionId=${connectionId}`);
+            window.location.assign(`/Game/Game?quizId=${quizId}&gamePin=${gamePin}&connectionId=${connectionId}&playerName=${playerName}`);
         });
 
         if (isHost) {    

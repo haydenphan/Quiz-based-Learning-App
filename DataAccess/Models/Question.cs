@@ -8,11 +8,8 @@ using System.Threading.Tasks;
 
 namespace DataAccess.Models
 {
-    public class Question
+    public class Question : BaseDomain
     {
-        [Key]
-        public int QuestionID { get; set; }
-
         [Required]
         public int QuizID { get; set; }
 
